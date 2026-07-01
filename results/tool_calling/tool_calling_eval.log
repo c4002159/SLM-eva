@@ -1,0 +1,461 @@
+06:01:14 [INFO] ============================================================
+06:01:14 [INFO] Tool-Calling Capability Evaluation — LDWS
+06:01:14 [INFO] Models : ['Qwen2.5 0.5B', 'TinyLlama 1.1B', 'Qwen2 1.5B', 'Llama3.2 3B', 'Phi-3 3.8B']
+06:01:14 [INFO] Cases  : 33
+06:01:14 [INFO] Output : ..\results\tool_calling
+06:01:14 [INFO] ============================================================
+06:01:14 [INFO] 
+06:01:14 [INFO] ─── Evaluating: Qwen2.5 0.5B  (33 cases) ───
+06:01:14 [INFO]   [Warmup] Qwen2.5 0.5B ...
+06:01:16 [INFO]   [ 1/33] Weather – Paris
+06:01:17 [DEBUG]   [Qwen2.5 0.5B] Case  1 | Weather – Paris        | tool=get_weather                | ✓
+06:01:17 [INFO]   [ 2/33] Calculate – multiplication
+06:01:17 [DEBUG]   [Qwen2.5 0.5B] Case  2 | Calculate – multiplication | tool=calculate                  | ✓
+06:01:17 [INFO]   [ 3/33] Time – Tokyo
+06:01:18 [DEBUG]   [Qwen2.5 0.5B] Case  3 | Time – Tokyo           | tool=get_current_time           | ✓
+06:01:18 [INFO]   [ 4/33] Search – Python tutorials
+06:01:18 [DEBUG]   [Qwen2.5 0.5B] Case  4 | Search – Python tutorials | tool=search_web                 | ✓
+06:01:18 [INFO]   [ 5/33] Weather – New York + unit
+06:01:19 [DEBUG]   [Qwen2.5 0.5B] Case  5 | Weather – New York + unit | tool=get_weather                | ✓
+06:01:19 [INFO]   [ 6/33] Translate – Hello to Spanish
+06:01:19 [DEBUG]   [Qwen2.5 0.5B] Case  6 | Translate – Hello to Spanish | tool=translate_text             | ✗
+06:01:19 [INFO]   [ 7/33] Currency – USD→EUR
+06:01:20 [DEBUG]   [Qwen2.5 0.5B] Case  7 | Currency – USD→EUR     | tool=convert_currency           | ✗
+06:01:20 [INFO]   [ 8/33] Stock – Apple (AAPL)
+06:01:20 [DEBUG]   [Qwen2.5 0.5B] Case  8 | Stock – Apple (AAPL)   | tool=get_stock_price            | ✓
+06:01:20 [INFO]   [ 9/33] Reminder – doctor appointment
+06:01:21 [DEBUG]   [Qwen2.5 0.5B] Case  9 | Reminder – doctor appointment | tool=set_reminder               | ✓
+06:01:21 [INFO]   [10/33] Search – AI news
+06:01:21 [DEBUG]   [Qwen2.5 0.5B] Case 10 | Search – AI news       | tool=None                       | ✗
+06:01:21 [INFO]   [11/33] Select: weather vs search
+06:01:21 [DEBUG]   [Qwen2.5 0.5B] Case 11 | Select: weather vs search | tool=None                       | ✗
+06:01:21 [INFO]   [12/33] Select: currency vs calculate
+06:01:22 [DEBUG]   [Qwen2.5 0.5B] Case 12 | Select: currency vs calculate | tool=calculate                  | ✗
+06:01:22 [INFO]   [13/33] Select: time vs search
+06:01:22 [DEBUG]   [Qwen2.5 0.5B] Case 13 | Select: time vs search | tool=get_current_time           | ✓
+06:01:22 [INFO]   [14/33] Select: calculate vs search
+06:01:23 [DEBUG]   [Qwen2.5 0.5B] Case 14 | Select: calculate vs search | tool=calculate                  | ✓
+06:01:23 [INFO]   [15/33] Select: translate vs search
+06:01:23 [DEBUG]   [Qwen2.5 0.5B] Case 15 | Select: translate vs search | tool=None                       | ✗
+06:01:23 [INFO]   [16/33] Select: weather (implicit)
+06:01:24 [DEBUG]   [Qwen2.5 0.5B] Case 16 | Select: weather (implicit) | tool=get_weather                | ✓
+06:01:24 [INFO]   [17/33] Select: stock vs search
+06:01:24 [DEBUG]   [Qwen2.5 0.5B] Case 17 | Select: stock vs search | tool=get_stock_price            | ✓
+06:01:24 [INFO]   [18/33] Select: reminder vs search
+06:01:25 [DEBUG]   [Qwen2.5 0.5B] Case 18 | Select: reminder vs search | tool=set_reminder               | ✓
+06:01:25 [INFO]   [19/33] Select: search vs translate
+06:01:25 [DEBUG]   [Qwen2.5 0.5B] Case 19 | Select: search vs translate | tool=search_web                 | ✓
+06:01:25 [INFO]   [20/33] Select: translate vs search
+06:01:26 [DEBUG]   [Qwen2.5 0.5B] Case 20 | Select: translate vs search | tool=convert_currency           | ✗
+06:01:26 [INFO]   [21/33] No-call: factual knowledge
+06:01:26 [DEBUG]   [Qwen2.5 0.5B] Case 21 | No-call: factual knowledge | tool=get_weather                | ✗
+06:01:26 [INFO]   [22/33] No-call: creative writing
+06:01:27 [DEBUG]   [Qwen2.5 0.5B] Case 22 | No-call: creative writing | tool=None                       | ✓
+06:01:27 [INFO]   [23/33] No-call: explanation
+06:01:27 [DEBUG]   [Qwen2.5 0.5B] Case 23 | No-call: explanation   | tool=None                       | ✓
+06:01:27 [INFO]   [24/33] No-call: general knowledge
+06:01:28 [DEBUG]   [Qwen2.5 0.5B] Case 24 | No-call: general knowledge | tool=None                       | ✓
+06:01:28 [INFO]   [25/33] No-call: casual conversation
+06:01:28 [DEBUG]   [Qwen2.5 0.5B] Case 25 | No-call: casual conversation | tool=None                       | ✓
+06:01:28 [INFO]   [26/33] No-call: basic geography
+06:01:29 [DEBUG]   [Qwen2.5 0.5B] Case 31 | No-call: basic geography | tool=get_number_of_continents   | ✗
+06:01:29 [INFO]   [27/33] No-call: vocabulary definition
+06:01:30 [DEBUG]   [Qwen2.5 0.5B] Case 32 | No-call: vocabulary definition | tool=None                       | ✓
+06:01:30 [INFO]   [28/33] No-call: science explanation
+06:01:31 [DEBUG]   [Qwen2.5 0.5B] Case 33 | No-call: science explanation | tool=None                       | ✓
+06:01:31 [INFO]   [29/33] Complex: weather both params
+06:01:32 [DEBUG]   [Qwen2.5 0.5B] Case 26 | Complex: weather both params | tool=None                       | ✗
+06:01:32 [INFO]   [30/33] Complex: currency written-out amount
+06:01:32 [DEBUG]   [Qwen2.5 0.5B] Case 27 | Complex: currency written-out amount | tool=convert_currency           | ✗
+06:01:32 [INFO]   [31/33] Complex: reminder ambiguous datetime
+06:01:33 [DEBUG]   [Qwen2.5 0.5B] Case 28 | Complex: reminder ambiguous datetime | tool=get_current_time           | ✗
+06:01:33 [INFO]   [32/33] Complex: calculate multi-step
+06:01:33 [DEBUG]   [Qwen2.5 0.5B] Case 29 | Complex: calculate multi-step | tool=None                       | ✗
+06:01:33 [INFO]   [33/33] Complex: translate dialect
+06:01:34 [DEBUG]   [Qwen2.5 0.5B] Case 30 | Complex: translate dialect | tool=translate_text             | ✓
+06:01:34 [INFO]   → Qwen2.5 0.5B: 20 / 33 correct  (61%)
+06:01:34 [INFO] 
+06:01:34 [INFO] ─── Evaluating: TinyLlama 1.1B  (33 cases) ───
+06:01:34 [INFO]   [Warmup] TinyLlama 1.1B ...
+06:01:34 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/tinyllama:latest does not support tools
+06:01:34 [INFO]   [ 1/33] Weather – Paris
+06:01:34 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/tinyllama:latest does not support tools
+06:01:34 [DEBUG]   [TinyLlama 1.1B] Case  1 | Weather – Paris        | tool=None                       | ✗
+06:01:34 [INFO]   [ 2/33] Calculate – multiplication
+06:01:34 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/tinyllama:latest does not support tools
+06:01:34 [DEBUG]   [TinyLlama 1.1B] Case  2 | Calculate – multiplication | tool=None                       | ✗
+06:01:34 [INFO]   [ 3/33] Time – Tokyo
+06:01:34 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/tinyllama:latest does not support tools
+06:01:34 [DEBUG]   [TinyLlama 1.1B] Case  3 | Time – Tokyo           | tool=None                       | ✗
+06:01:34 [INFO]   [ 4/33] Search – Python tutorials
+06:01:34 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/tinyllama:latest does not support tools
+06:01:34 [DEBUG]   [TinyLlama 1.1B] Case  4 | Search – Python tutorials | tool=None                       | ✗
+06:01:34 [INFO]   [ 5/33] Weather – New York + unit
+06:01:34 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/tinyllama:latest does not support tools
+06:01:34 [DEBUG]   [TinyLlama 1.1B] Case  5 | Weather – New York + unit | tool=None                       | ✗
+06:01:34 [INFO]   [ 6/33] Translate – Hello to Spanish
+06:01:35 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/tinyllama:latest does not support tools
+06:01:35 [DEBUG]   [TinyLlama 1.1B] Case  6 | Translate – Hello to Spanish | tool=None                       | ✗
+06:01:35 [INFO]   [ 7/33] Currency – USD→EUR
+06:01:35 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/tinyllama:latest does not support tools
+06:01:35 [DEBUG]   [TinyLlama 1.1B] Case  7 | Currency – USD→EUR     | tool=None                       | ✗
+06:01:35 [INFO]   [ 8/33] Stock – Apple (AAPL)
+06:01:35 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/tinyllama:latest does not support tools
+06:01:35 [DEBUG]   [TinyLlama 1.1B] Case  8 | Stock – Apple (AAPL)   | tool=None                       | ✗
+06:01:35 [INFO]   [ 9/33] Reminder – doctor appointment
+06:01:35 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/tinyllama:latest does not support tools
+06:01:35 [DEBUG]   [TinyLlama 1.1B] Case  9 | Reminder – doctor appointment | tool=None                       | ✗
+06:01:35 [INFO]   [10/33] Search – AI news
+06:01:35 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/tinyllama:latest does not support tools
+06:01:35 [DEBUG]   [TinyLlama 1.1B] Case 10 | Search – AI news       | tool=None                       | ✗
+06:01:35 [INFO]   [11/33] Select: weather vs search
+06:01:35 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/tinyllama:latest does not support tools
+06:01:35 [DEBUG]   [TinyLlama 1.1B] Case 11 | Select: weather vs search | tool=None                       | ✗
+06:01:35 [INFO]   [12/33] Select: currency vs calculate
+06:01:35 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/tinyllama:latest does not support tools
+06:01:35 [DEBUG]   [TinyLlama 1.1B] Case 12 | Select: currency vs calculate | tool=None                       | ✗
+06:01:35 [INFO]   [13/33] Select: time vs search
+06:01:35 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/tinyllama:latest does not support tools
+06:01:35 [DEBUG]   [TinyLlama 1.1B] Case 13 | Select: time vs search | tool=None                       | ✗
+06:01:35 [INFO]   [14/33] Select: calculate vs search
+06:01:35 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/tinyllama:latest does not support tools
+06:01:35 [DEBUG]   [TinyLlama 1.1B] Case 14 | Select: calculate vs search | tool=None                       | ✗
+06:01:35 [INFO]   [15/33] Select: translate vs search
+06:01:35 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/tinyllama:latest does not support tools
+06:01:35 [DEBUG]   [TinyLlama 1.1B] Case 15 | Select: translate vs search | tool=None                       | ✗
+06:01:35 [INFO]   [16/33] Select: weather (implicit)
+06:01:35 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/tinyllama:latest does not support tools
+06:01:35 [DEBUG]   [TinyLlama 1.1B] Case 16 | Select: weather (implicit) | tool=None                       | ✗
+06:01:35 [INFO]   [17/33] Select: stock vs search
+06:01:35 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/tinyllama:latest does not support tools
+06:01:35 [DEBUG]   [TinyLlama 1.1B] Case 17 | Select: stock vs search | tool=None                       | ✗
+06:01:35 [INFO]   [18/33] Select: reminder vs search
+06:01:35 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/tinyllama:latest does not support tools
+06:01:35 [DEBUG]   [TinyLlama 1.1B] Case 18 | Select: reminder vs search | tool=None                       | ✗
+06:01:35 [INFO]   [19/33] Select: search vs translate
+06:01:36 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/tinyllama:latest does not support tools
+06:01:36 [DEBUG]   [TinyLlama 1.1B] Case 19 | Select: search vs translate | tool=None                       | ✗
+06:01:36 [INFO]   [20/33] Select: translate vs search
+06:01:36 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/tinyllama:latest does not support tools
+06:01:36 [DEBUG]   [TinyLlama 1.1B] Case 20 | Select: translate vs search | tool=None                       | ✗
+06:01:36 [INFO]   [21/33] No-call: factual knowledge
+06:01:36 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/tinyllama:latest does not support tools
+06:01:36 [DEBUG]   [TinyLlama 1.1B] Case 21 | No-call: factual knowledge | tool=None                       | ✓
+06:01:36 [INFO]   [22/33] No-call: creative writing
+06:01:36 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/tinyllama:latest does not support tools
+06:01:36 [DEBUG]   [TinyLlama 1.1B] Case 22 | No-call: creative writing | tool=None                       | ✓
+06:01:36 [INFO]   [23/33] No-call: explanation
+06:01:36 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/tinyllama:latest does not support tools
+06:01:36 [DEBUG]   [TinyLlama 1.1B] Case 23 | No-call: explanation   | tool=None                       | ✓
+06:01:36 [INFO]   [24/33] No-call: general knowledge
+06:01:36 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/tinyllama:latest does not support tools
+06:01:36 [DEBUG]   [TinyLlama 1.1B] Case 24 | No-call: general knowledge | tool=None                       | ✓
+06:01:36 [INFO]   [25/33] No-call: casual conversation
+06:01:36 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/tinyllama:latest does not support tools
+06:01:36 [DEBUG]   [TinyLlama 1.1B] Case 25 | No-call: casual conversation | tool=None                       | ✓
+06:01:36 [INFO]   [26/33] No-call: basic geography
+06:01:36 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/tinyllama:latest does not support tools
+06:01:36 [DEBUG]   [TinyLlama 1.1B] Case 31 | No-call: basic geography | tool=None                       | ✓
+06:01:36 [INFO]   [27/33] No-call: vocabulary definition
+06:01:36 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/tinyllama:latest does not support tools
+06:01:36 [DEBUG]   [TinyLlama 1.1B] Case 32 | No-call: vocabulary definition | tool=None                       | ✓
+06:01:36 [INFO]   [28/33] No-call: science explanation
+06:01:36 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/tinyllama:latest does not support tools
+06:01:36 [DEBUG]   [TinyLlama 1.1B] Case 33 | No-call: science explanation | tool=None                       | ✓
+06:01:36 [INFO]   [29/33] Complex: weather both params
+06:01:36 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/tinyllama:latest does not support tools
+06:01:36 [DEBUG]   [TinyLlama 1.1B] Case 26 | Complex: weather both params | tool=None                       | ✗
+06:01:36 [INFO]   [30/33] Complex: currency written-out amount
+06:01:37 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/tinyllama:latest does not support tools
+06:01:37 [DEBUG]   [TinyLlama 1.1B] Case 27 | Complex: currency written-out amount | tool=None                       | ✗
+06:01:37 [INFO]   [31/33] Complex: reminder ambiguous datetime
+06:01:37 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/tinyllama:latest does not support tools
+06:01:37 [DEBUG]   [TinyLlama 1.1B] Case 28 | Complex: reminder ambiguous datetime | tool=None                       | ✗
+06:01:37 [INFO]   [32/33] Complex: calculate multi-step
+06:01:37 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/tinyllama:latest does not support tools
+06:01:37 [DEBUG]   [TinyLlama 1.1B] Case 29 | Complex: calculate multi-step | tool=None                       | ✗
+06:01:37 [INFO]   [33/33] Complex: translate dialect
+06:01:37 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/tinyllama:latest does not support tools
+06:01:37 [DEBUG]   [TinyLlama 1.1B] Case 30 | Complex: translate dialect | tool=None                       | ✗
+06:01:37 [INFO]   → TinyLlama 1.1B: 8 / 33 correct  (24%)
+06:01:37 [INFO] 
+06:01:37 [INFO] ─── Evaluating: Qwen2 1.5B  (33 cases) ───
+06:01:37 [INFO]   [Warmup] Qwen2 1.5B ...
+06:01:37 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/qwen2:1.5b does not support tools
+06:01:37 [INFO]   [ 1/33] Weather – Paris
+06:01:37 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/qwen2:1.5b does not support tools
+06:01:37 [DEBUG]   [Qwen2 1.5B] Case  1 | Weather – Paris        | tool=None                       | ✗
+06:01:37 [INFO]   [ 2/33] Calculate – multiplication
+06:01:38 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/qwen2:1.5b does not support tools
+06:01:38 [DEBUG]   [Qwen2 1.5B] Case  2 | Calculate – multiplication | tool=None                       | ✗
+06:01:38 [INFO]   [ 3/33] Time – Tokyo
+06:01:38 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/qwen2:1.5b does not support tools
+06:01:38 [DEBUG]   [Qwen2 1.5B] Case  3 | Time – Tokyo           | tool=None                       | ✗
+06:01:38 [INFO]   [ 4/33] Search – Python tutorials
+06:01:38 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/qwen2:1.5b does not support tools
+06:01:38 [DEBUG]   [Qwen2 1.5B] Case  4 | Search – Python tutorials | tool=None                       | ✗
+06:01:38 [INFO]   [ 5/33] Weather – New York + unit
+06:01:38 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/qwen2:1.5b does not support tools
+06:01:38 [DEBUG]   [Qwen2 1.5B] Case  5 | Weather – New York + unit | tool=None                       | ✗
+06:01:38 [INFO]   [ 6/33] Translate – Hello to Spanish
+06:01:38 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/qwen2:1.5b does not support tools
+06:01:38 [DEBUG]   [Qwen2 1.5B] Case  6 | Translate – Hello to Spanish | tool=None                       | ✗
+06:01:38 [INFO]   [ 7/33] Currency – USD→EUR
+06:01:39 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/qwen2:1.5b does not support tools
+06:01:39 [DEBUG]   [Qwen2 1.5B] Case  7 | Currency – USD→EUR     | tool=None                       | ✗
+06:01:39 [INFO]   [ 8/33] Stock – Apple (AAPL)
+06:01:39 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/qwen2:1.5b does not support tools
+06:01:39 [DEBUG]   [Qwen2 1.5B] Case  8 | Stock – Apple (AAPL)   | tool=None                       | ✗
+06:01:39 [INFO]   [ 9/33] Reminder – doctor appointment
+06:01:39 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/qwen2:1.5b does not support tools
+06:01:39 [DEBUG]   [Qwen2 1.5B] Case  9 | Reminder – doctor appointment | tool=None                       | ✗
+06:01:39 [INFO]   [10/33] Search – AI news
+06:01:39 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/qwen2:1.5b does not support tools
+06:01:39 [DEBUG]   [Qwen2 1.5B] Case 10 | Search – AI news       | tool=None                       | ✗
+06:01:39 [INFO]   [11/33] Select: weather vs search
+06:01:39 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/qwen2:1.5b does not support tools
+06:01:39 [DEBUG]   [Qwen2 1.5B] Case 11 | Select: weather vs search | tool=None                       | ✗
+06:01:39 [INFO]   [12/33] Select: currency vs calculate
+06:01:40 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/qwen2:1.5b does not support tools
+06:01:40 [DEBUG]   [Qwen2 1.5B] Case 12 | Select: currency vs calculate | tool=None                       | ✗
+06:01:40 [INFO]   [13/33] Select: time vs search
+06:01:40 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/qwen2:1.5b does not support tools
+06:01:40 [DEBUG]   [Qwen2 1.5B] Case 13 | Select: time vs search | tool=None                       | ✗
+06:01:40 [INFO]   [14/33] Select: calculate vs search
+06:01:40 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/qwen2:1.5b does not support tools
+06:01:40 [DEBUG]   [Qwen2 1.5B] Case 14 | Select: calculate vs search | tool=None                       | ✗
+06:01:40 [INFO]   [15/33] Select: translate vs search
+06:01:40 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/qwen2:1.5b does not support tools
+06:01:40 [DEBUG]   [Qwen2 1.5B] Case 15 | Select: translate vs search | tool=None                       | ✗
+06:01:40 [INFO]   [16/33] Select: weather (implicit)
+06:01:40 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/qwen2:1.5b does not support tools
+06:01:40 [DEBUG]   [Qwen2 1.5B] Case 16 | Select: weather (implicit) | tool=None                       | ✗
+06:01:40 [INFO]   [17/33] Select: stock vs search
+06:01:41 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/qwen2:1.5b does not support tools
+06:01:41 [DEBUG]   [Qwen2 1.5B] Case 17 | Select: stock vs search | tool=None                       | ✗
+06:01:41 [INFO]   [18/33] Select: reminder vs search
+06:01:41 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/qwen2:1.5b does not support tools
+06:01:41 [DEBUG]   [Qwen2 1.5B] Case 18 | Select: reminder vs search | tool=None                       | ✗
+06:01:41 [INFO]   [19/33] Select: search vs translate
+06:01:41 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/qwen2:1.5b does not support tools
+06:01:41 [DEBUG]   [Qwen2 1.5B] Case 19 | Select: search vs translate | tool=None                       | ✗
+06:01:41 [INFO]   [20/33] Select: translate vs search
+06:01:41 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/qwen2:1.5b does not support tools
+06:01:41 [DEBUG]   [Qwen2 1.5B] Case 20 | Select: translate vs search | tool=None                       | ✗
+06:01:41 [INFO]   [21/33] No-call: factual knowledge
+06:01:42 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/qwen2:1.5b does not support tools
+06:01:42 [DEBUG]   [Qwen2 1.5B] Case 21 | No-call: factual knowledge | tool=None                       | ✓
+06:01:42 [INFO]   [22/33] No-call: creative writing
+06:01:42 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/qwen2:1.5b does not support tools
+06:01:42 [DEBUG]   [Qwen2 1.5B] Case 22 | No-call: creative writing | tool=None                       | ✓
+06:01:42 [INFO]   [23/33] No-call: explanation
+06:01:42 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/qwen2:1.5b does not support tools
+06:01:42 [DEBUG]   [Qwen2 1.5B] Case 23 | No-call: explanation   | tool=None                       | ✓
+06:01:42 [INFO]   [24/33] No-call: general knowledge
+06:01:42 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/qwen2:1.5b does not support tools
+06:01:42 [DEBUG]   [Qwen2 1.5B] Case 24 | No-call: general knowledge | tool=None                       | ✓
+06:01:42 [INFO]   [25/33] No-call: casual conversation
+06:01:43 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/qwen2:1.5b does not support tools
+06:01:43 [DEBUG]   [Qwen2 1.5B] Case 25 | No-call: casual conversation | tool=None                       | ✓
+06:01:43 [INFO]   [26/33] No-call: basic geography
+06:01:43 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/qwen2:1.5b does not support tools
+06:01:43 [DEBUG]   [Qwen2 1.5B] Case 31 | No-call: basic geography | tool=None                       | ✓
+06:01:43 [INFO]   [27/33] No-call: vocabulary definition
+06:01:43 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/qwen2:1.5b does not support tools
+06:01:43 [DEBUG]   [Qwen2 1.5B] Case 32 | No-call: vocabulary definition | tool=None                       | ✓
+06:01:43 [INFO]   [28/33] No-call: science explanation
+06:01:43 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/qwen2:1.5b does not support tools
+06:01:43 [DEBUG]   [Qwen2 1.5B] Case 33 | No-call: science explanation | tool=None                       | ✓
+06:01:43 [INFO]   [29/33] Complex: weather both params
+06:01:43 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/qwen2:1.5b does not support tools
+06:01:43 [DEBUG]   [Qwen2 1.5B] Case 26 | Complex: weather both params | tool=None                       | ✗
+06:01:43 [INFO]   [30/33] Complex: currency written-out amount
+06:01:44 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/qwen2:1.5b does not support tools
+06:01:44 [DEBUG]   [Qwen2 1.5B] Case 27 | Complex: currency written-out amount | tool=None                       | ✗
+06:01:44 [INFO]   [31/33] Complex: reminder ambiguous datetime
+06:01:44 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/qwen2:1.5b does not support tools
+06:01:44 [DEBUG]   [Qwen2 1.5B] Case 28 | Complex: reminder ambiguous datetime | tool=None                       | ✗
+06:01:44 [INFO]   [32/33] Complex: calculate multi-step
+06:01:44 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/qwen2:1.5b does not support tools
+06:01:44 [DEBUG]   [Qwen2 1.5B] Case 29 | Complex: calculate multi-step | tool=None                       | ✗
+06:01:44 [INFO]   [33/33] Complex: translate dialect
+06:01:44 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/qwen2:1.5b does not support tools
+06:01:44 [DEBUG]   [Qwen2 1.5B] Case 30 | Complex: translate dialect | tool=None                       | ✗
+06:01:44 [INFO]   → Qwen2 1.5B: 8 / 33 correct  (24%)
+06:01:44 [INFO] 
+06:01:44 [INFO] ─── Evaluating: Llama3.2 3B  (33 cases) ───
+06:01:44 [INFO]   [Warmup] Llama3.2 3B ...
+06:01:47 [INFO]   [ 1/33] Weather – Paris
+06:01:48 [DEBUG]   [Llama3.2 3B] Case  1 | Weather – Paris        | tool=get_weather                | ✓
+06:01:48 [INFO]   [ 2/33] Calculate – multiplication
+06:01:49 [DEBUG]   [Llama3.2 3B] Case  2 | Calculate – multiplication | tool=calculate                  | ✓
+06:01:49 [INFO]   [ 3/33] Time – Tokyo
+06:01:49 [DEBUG]   [Llama3.2 3B] Case  3 | Time – Tokyo           | tool=get_current_time           | ✓
+06:01:49 [INFO]   [ 4/33] Search – Python tutorials
+06:01:50 [DEBUG]   [Llama3.2 3B] Case  4 | Search – Python tutorials | tool=search_web                 | ✓
+06:01:50 [INFO]   [ 5/33] Weather – New York + unit
+06:01:51 [DEBUG]   [Llama3.2 3B] Case  5 | Weather – New York + unit | tool=get_weather                | ✓
+06:01:51 [INFO]   [ 6/33] Translate – Hello to Spanish
+06:01:51 [DEBUG]   [Llama3.2 3B] Case  6 | Translate – Hello to Spanish | tool=translate_text             | ✓
+06:01:51 [INFO]   [ 7/33] Currency – USD→EUR
+06:01:52 [DEBUG]   [Llama3.2 3B] Case  7 | Currency – USD→EUR     | tool=convert_currency           | ✓
+06:01:52 [INFO]   [ 8/33] Stock – Apple (AAPL)
+06:01:53 [DEBUG]   [Llama3.2 3B] Case  8 | Stock – Apple (AAPL)   | tool=get_stock_price            | ✓
+06:01:53 [INFO]   [ 9/33] Reminder – doctor appointment
+06:01:54 [DEBUG]   [Llama3.2 3B] Case  9 | Reminder – doctor appointment | tool=set_reminder               | ✓
+06:01:54 [INFO]   [10/33] Search – AI news
+06:01:54 [DEBUG]   [Llama3.2 3B] Case 10 | Search – AI news       | tool=search_web                 | ✓
+06:01:54 [INFO]   [11/33] Select: weather vs search
+06:01:55 [DEBUG]   [Llama3.2 3B] Case 11 | Select: weather vs search | tool=get_weather                | ✓
+06:01:55 [INFO]   [12/33] Select: currency vs calculate
+06:01:56 [DEBUG]   [Llama3.2 3B] Case 12 | Select: currency vs calculate | tool=convert_currency           | ✓
+06:01:56 [INFO]   [13/33] Select: time vs search
+06:01:57 [DEBUG]   [Llama3.2 3B] Case 13 | Select: time vs search | tool=get_current_time           | ✓
+06:01:57 [INFO]   [14/33] Select: calculate vs search
+06:01:57 [DEBUG]   [Llama3.2 3B] Case 14 | Select: calculate vs search | tool=calculate                  | ✓
+06:01:57 [INFO]   [15/33] Select: translate vs search
+06:01:58 [DEBUG]   [Llama3.2 3B] Case 15 | Select: translate vs search | tool=translate_text             | ✗
+06:01:58 [INFO]   [16/33] Select: weather (implicit)
+06:01:59 [DEBUG]   [Llama3.2 3B] Case 16 | Select: weather (implicit) | tool=get_weather                | ✓
+06:01:59 [INFO]   [17/33] Select: stock vs search
+06:01:59 [DEBUG]   [Llama3.2 3B] Case 17 | Select: stock vs search | tool=get_stock_price            | ✓
+06:01:59 [INFO]   [18/33] Select: reminder vs search
+06:02:00 [DEBUG]   [Llama3.2 3B] Case 18 | Select: reminder vs search | tool=set_reminder               | ✓
+06:02:00 [INFO]   [19/33] Select: search vs translate
+06:02:01 [DEBUG]   [Llama3.2 3B] Case 19 | Select: search vs translate | tool=search_web                 | ✓
+06:02:01 [INFO]   [20/33] Select: translate vs search
+06:02:02 [DEBUG]   [Llama3.2 3B] Case 20 | Select: translate vs search | tool=translate_text             | ✓
+06:02:02 [INFO]   [21/33] No-call: factual knowledge
+06:02:02 [DEBUG]   [Llama3.2 3B] Case 21 | No-call: factual knowledge | tool=get_weather                | ✗
+06:02:02 [INFO]   [22/33] No-call: creative writing
+06:02:03 [DEBUG]   [Llama3.2 3B] Case 22 | No-call: creative writing | tool=calculate                  | ✗
+06:02:03 [INFO]   [23/33] No-call: explanation
+06:02:04 [DEBUG]   [Llama3.2 3B] Case 23 | No-call: explanation   | tool=calculate                  | ✗
+06:02:04 [INFO]   [24/33] No-call: general knowledge
+06:02:05 [DEBUG]   [Llama3.2 3B] Case 24 | No-call: general knowledge | tool=search_web                 | ✗
+06:02:05 [INFO]   [25/33] No-call: casual conversation
+06:02:05 [DEBUG]   [Llama3.2 3B] Case 25 | No-call: casual conversation | tool=translate_text             | ✗
+06:02:05 [INFO]   [26/33] No-call: basic geography
+06:02:06 [DEBUG]   [Llama3.2 3B] Case 31 | No-call: basic geography | tool=get_weather                | ✗
+06:02:06 [INFO]   [27/33] No-call: vocabulary definition
+06:02:07 [DEBUG]   [Llama3.2 3B] Case 32 | No-call: vocabulary definition | tool=translate_text             | ✗
+06:02:07 [INFO]   [28/33] No-call: science explanation
+06:02:07 [DEBUG]   [Llama3.2 3B] Case 33 | No-call: science explanation | tool=translate_text             | ✗
+06:02:07 [INFO]   [29/33] Complex: weather both params
+06:02:08 [DEBUG]   [Llama3.2 3B] Case 26 | Complex: weather both params | tool=get_weather                | ✓
+06:02:08 [INFO]   [30/33] Complex: currency written-out amount
+06:02:09 [DEBUG]   [Llama3.2 3B] Case 27 | Complex: currency written-out amount | tool=convert_currency           | ✓
+06:02:09 [INFO]   [31/33] Complex: reminder ambiguous datetime
+06:02:10 [DEBUG]   [Llama3.2 3B] Case 28 | Complex: reminder ambiguous datetime | tool=set_reminder               | ✓
+06:02:10 [INFO]   [32/33] Complex: calculate multi-step
+06:02:10 [DEBUG]   [Llama3.2 3B] Case 29 | Complex: calculate multi-step | tool=calculate                  | ✓
+06:02:10 [INFO]   [33/33] Complex: translate dialect
+06:02:11 [DEBUG]   [Llama3.2 3B] Case 30 | Complex: translate dialect | tool=translate_text             | ✓
+06:02:11 [INFO]   → Llama3.2 3B: 24 / 33 correct  (73%)
+06:02:11 [INFO] 
+06:02:11 [INFO] ─── Evaluating: Phi-3 3.8B  (33 cases) ───
+06:02:11 [INFO]   [Warmup] Phi-3 3.8B ...
+06:02:11 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/phi3:latest does not support tools
+06:02:11 [INFO]   [ 1/33] Weather – Paris
+06:02:11 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/phi3:latest does not support tools
+06:02:11 [DEBUG]   [Phi-3 3.8B] Case  1 | Weather – Paris        | tool=None                       | ✗
+06:02:11 [INFO]   [ 2/33] Calculate – multiplication
+06:02:11 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/phi3:latest does not support tools
+06:02:11 [DEBUG]   [Phi-3 3.8B] Case  2 | Calculate – multiplication | tool=None                       | ✗
+06:02:11 [INFO]   [ 3/33] Time – Tokyo
+06:02:11 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/phi3:latest does not support tools
+06:02:11 [DEBUG]   [Phi-3 3.8B] Case  3 | Time – Tokyo           | tool=None                       | ✗
+06:02:11 [INFO]   [ 4/33] Search – Python tutorials
+06:02:11 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/phi3:latest does not support tools
+06:02:11 [DEBUG]   [Phi-3 3.8B] Case  4 | Search – Python tutorials | tool=None                       | ✗
+06:02:11 [INFO]   [ 5/33] Weather – New York + unit
+06:02:12 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/phi3:latest does not support tools
+06:02:12 [DEBUG]   [Phi-3 3.8B] Case  5 | Weather – New York + unit | tool=None                       | ✗
+06:02:12 [INFO]   [ 6/33] Translate – Hello to Spanish
+06:02:12 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/phi3:latest does not support tools
+06:02:12 [DEBUG]   [Phi-3 3.8B] Case  6 | Translate – Hello to Spanish | tool=None                       | ✗
+06:02:12 [INFO]   [ 7/33] Currency – USD→EUR
+06:02:12 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/phi3:latest does not support tools
+06:02:12 [DEBUG]   [Phi-3 3.8B] Case  7 | Currency – USD→EUR     | tool=None                       | ✗
+06:02:12 [INFO]   [ 8/33] Stock – Apple (AAPL)
+06:02:12 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/phi3:latest does not support tools
+06:02:12 [DEBUG]   [Phi-3 3.8B] Case  8 | Stock – Apple (AAPL)   | tool=None                       | ✗
+06:02:12 [INFO]   [ 9/33] Reminder – doctor appointment
+06:02:12 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/phi3:latest does not support tools
+06:02:12 [DEBUG]   [Phi-3 3.8B] Case  9 | Reminder – doctor appointment | tool=None                       | ✗
+06:02:12 [INFO]   [10/33] Search – AI news
+06:02:12 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/phi3:latest does not support tools
+06:02:12 [DEBUG]   [Phi-3 3.8B] Case 10 | Search – AI news       | tool=None                       | ✗
+06:02:12 [INFO]   [11/33] Select: weather vs search
+06:02:12 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/phi3:latest does not support tools
+06:02:12 [DEBUG]   [Phi-3 3.8B] Case 11 | Select: weather vs search | tool=None                       | ✗
+06:02:12 [INFO]   [12/33] Select: currency vs calculate
+06:02:12 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/phi3:latest does not support tools
+06:02:12 [DEBUG]   [Phi-3 3.8B] Case 12 | Select: currency vs calculate | tool=None                       | ✗
+06:02:12 [INFO]   [13/33] Select: time vs search
+06:02:12 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/phi3:latest does not support tools
+06:02:12 [DEBUG]   [Phi-3 3.8B] Case 13 | Select: time vs search | tool=None                       | ✗
+06:02:12 [INFO]   [14/33] Select: calculate vs search
+06:02:12 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/phi3:latest does not support tools
+06:02:12 [DEBUG]   [Phi-3 3.8B] Case 14 | Select: calculate vs search | tool=None                       | ✗
+06:02:12 [INFO]   [15/33] Select: translate vs search
+06:02:12 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/phi3:latest does not support tools
+06:02:12 [DEBUG]   [Phi-3 3.8B] Case 15 | Select: translate vs search | tool=None                       | ✗
+06:02:12 [INFO]   [16/33] Select: weather (implicit)
+06:02:12 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/phi3:latest does not support tools
+06:02:12 [DEBUG]   [Phi-3 3.8B] Case 16 | Select: weather (implicit) | tool=None                       | ✗
+06:02:12 [INFO]   [17/33] Select: stock vs search
+06:02:12 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/phi3:latest does not support tools
+06:02:12 [DEBUG]   [Phi-3 3.8B] Case 17 | Select: stock vs search | tool=None                       | ✗
+06:02:12 [INFO]   [18/33] Select: reminder vs search
+06:02:12 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/phi3:latest does not support tools
+06:02:12 [DEBUG]   [Phi-3 3.8B] Case 18 | Select: reminder vs search | tool=None                       | ✗
+06:02:12 [INFO]   [19/33] Select: search vs translate
+06:02:12 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/phi3:latest does not support tools
+06:02:12 [DEBUG]   [Phi-3 3.8B] Case 19 | Select: search vs translate | tool=None                       | ✗
+06:02:12 [INFO]   [20/33] Select: translate vs search
+06:02:12 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/phi3:latest does not support tools
+06:02:12 [DEBUG]   [Phi-3 3.8B] Case 20 | Select: translate vs search | tool=None                       | ✗
+06:02:12 [INFO]   [21/33] No-call: factual knowledge
+06:02:12 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/phi3:latest does not support tools
+06:02:12 [DEBUG]   [Phi-3 3.8B] Case 21 | No-call: factual knowledge | tool=None                       | ✓
+06:02:12 [INFO]   [22/33] No-call: creative writing
+06:02:12 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/phi3:latest does not support tools
+06:02:12 [DEBUG]   [Phi-3 3.8B] Case 22 | No-call: creative writing | tool=None                       | ✓
+06:02:12 [INFO]   [23/33] No-call: explanation
+06:02:13 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/phi3:latest does not support tools
+06:02:13 [DEBUG]   [Phi-3 3.8B] Case 23 | No-call: explanation   | tool=None                       | ✓
+06:02:13 [INFO]   [24/33] No-call: general knowledge
+06:02:13 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/phi3:latest does not support tools
+06:02:13 [DEBUG]   [Phi-3 3.8B] Case 24 | No-call: general knowledge | tool=None                       | ✓
+06:02:13 [INFO]   [25/33] No-call: casual conversation
+06:02:13 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/phi3:latest does not support tools
+06:02:13 [DEBUG]   [Phi-3 3.8B] Case 25 | No-call: casual conversation | tool=None                       | ✓
+06:02:13 [INFO]   [26/33] No-call: basic geography
+06:02:13 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/phi3:latest does not support tools
+06:02:13 [DEBUG]   [Phi-3 3.8B] Case 31 | No-call: basic geography | tool=None                       | ✓
+06:02:13 [INFO]   [27/33] No-call: vocabulary definition
+06:02:13 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/phi3:latest does not support tools
+06:02:13 [DEBUG]   [Phi-3 3.8B] Case 32 | No-call: vocabulary definition | tool=None                       | ✓
+06:02:13 [INFO]   [28/33] No-call: science explanation
+06:02:13 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/phi3:latest does not support tools
+06:02:13 [DEBUG]   [Phi-3 3.8B] Case 33 | No-call: science explanation | tool=None                       | ✓
+06:02:13 [INFO]   [29/33] Complex: weather both params
+06:02:13 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/phi3:latest does not support tools
+06:02:13 [DEBUG]   [Phi-3 3.8B] Case 26 | Complex: weather both params | tool=None                       | ✗
+06:02:13 [INFO]   [30/33] Complex: currency written-out amount
+06:02:13 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/phi3:latest does not support tools
+06:02:13 [DEBUG]   [Phi-3 3.8B] Case 27 | Complex: currency written-out amount | tool=None                       | ✗
+06:02:13 [INFO]   [31/33] Complex: reminder ambiguous datetime
+06:02:13 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/phi3:latest does not support tools
+06:02:13 [DEBUG]   [Phi-3 3.8B] Case 28 | Complex: reminder ambiguous datetime | tool=None                       | ✗
+06:02:13 [INFO]   [32/33] Complex: calculate multi-step
+06:02:13 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/phi3:latest does not support tools
+06:02:13 [DEBUG]   [Phi-3 3.8B] Case 29 | Complex: calculate multi-step | tool=None                       | ✗
+06:02:13 [INFO]   [33/33] Complex: translate dialect
+06:02:13 [WARNING]     [FAIL FAST] 400 Bad Request: registry.ollama.ai/library/phi3:latest does not support tools
+06:02:13 [DEBUG]   [Phi-3 3.8B] Case 30 | Complex: translate dialect | tool=None                       | ✗
+06:02:13 [INFO]   → Phi-3 3.8B: 8 / 33 correct  (24%)
+06:02:13 [INFO] 
+Per-case results  → ..\results\tool_calling\tool_calling_results.csv
+06:02:13 [INFO] Summary           → ..\results\tool_calling\tool_calling_summary.csv

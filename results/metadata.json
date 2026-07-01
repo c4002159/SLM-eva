@@ -1,0 +1,62 @@
+{
+  "timestamp": "2026-06-30T18:15:43.124867",
+  "total_requests": 2250,
+  "outliers_flagged": 0,
+  "models": [
+    "qwen2.5:0.5b",
+    "tinyllama:latest",
+    "qwen2:1.5b",
+    "llama3.2:3b",
+    "phi3:latest"
+  ],
+  "scenarios": [
+    "serial",
+    "high_load",
+    "concurrent"
+  ],
+  "num_runs": 3,
+  "prompts_n": 50,
+  "baseline": {
+    "cpu_idle_pct": 1.23,
+    "duration_s": 60,
+    "timestamp": "2026-06-30T16:42:11.328603",
+    "gpu_idle_mem_mb": 301.6
+  },
+  "device_map": {
+    "qwen2.5:0.5b": "GPU",
+    "tinyllama:latest": "GPU",
+    "qwen2:1.5b": "GPU",
+    "llama3.2:3b": "GPU",
+    "phi3:latest": "GPU"
+  },
+  "codecarbon_available": true,
+  "hardware": {
+    "os": "Windows-11-10.0.22631-SP0",
+    "python_version": "3.13.12",
+    "cpu": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "cpu_cores_physical": 14,
+    "cpu_cores_logical": 20,
+    "ram_total_gb": 15.65,
+    "gpu_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "gpu_vram_total_gb": 6.0,
+    "gpu_driver_version": "592.27",
+    "ollama_client_version": "N/A (ollama Python package not installed)"
+  },
+  "config": {
+    "prompts_path": "..\\data\\prompts.json",
+    "output_dir": "..\\results",
+    "ollama_url": "http://localhost:11434/api/generate",
+    "temperature": 0,
+    "max_tokens": 256,
+    "seed": 42,
+    "serial_gap": 0.1,
+    "high_load_gap": 0.0,
+    "concurrent_workers": 4,
+    "num_runs": 3,
+    "warmup_rounds": 3,
+    "baseline_duration": 60,
+    "sample_interval_ms": 50,
+    "outlier_z_threshold": 3.0,
+    "cpu_tdp_watts": 45
+  }
+}

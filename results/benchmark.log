@@ -1,0 +1,1689 @@
+2026-06-16 00:08:36 [INFO] ============================================================
+2026-06-16 00:08:36 [INFO] SLM Runtime Benchmarking — LDWS
+2026-06-16 00:08:36 [INFO] Models : ['Qwen2.5 0.5B', 'TinyLlama 1.1B', 'Qwen 1.8B', 'Llama3.2 3B', 'Phi-3 3.8B']
+2026-06-16 00:08:36 [INFO] Runs   : 1
+2026-06-16 00:08:36 [INFO] Prompts: ..\data\prompts.json
+2026-06-16 00:08:36 [INFO] Output : ..\results
+2026-06-16 00:08:36 [INFO] CodeCarbon available: True
+2026-06-16 00:08:36 [INFO] ============================================================
+2026-06-16 00:08:36 [INFO] Loaded 50 prompts from LDWS set
+2026-06-16 00:08:36 [INFO] 
+=== Phase 0: Inference Device Detection ===
+2026-06-16 00:08:40 [WARNING]   [Device] Detection failed for qwen2.5:0.5b: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。"))
+2026-06-16 00:08:40 [WARNING]   [Device] Detection failed for tinyllama:latest: Unknown Error
+2026-06-16 00:08:40 [WARNING]   [Device] Detection failed for qwen:1.8b: Unknown Error
+2026-06-16 00:08:40 [WARNING]   [Device] Detection failed for llama3.2:3b: Unknown Error
+2026-06-16 00:08:40 [WARNING]   [Device] Detection failed for phi3:latest: Unknown Error
+2026-06-16 00:08:40 [INFO]   Device map saved to device_map.json
+2026-06-16 00:08:40 [INFO] 
+[1/5] Model=Qwen2.5 0.5B | Scenario=serial | Run=1
+2026-06-16 00:08:40 [INFO]   [SERIAL] Qwen2.5 0.5B — run 1/1 (50 prompts)
+2026-06-16 00:08:40 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-16 00:08:44 [WARNING]   Ollama error (attempt 1/3): HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。"))
+2026-06-16 00:08:50 [WARNING]   Ollama error (attempt 2/3): HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。"))
+2026-06-16 00:08:56 [WARNING]   Ollama error (attempt 3/3): HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。"))
+2026-06-16 00:08:58 [INFO]   [Cold start] Qwen2.5 0.5B: 18171 ms
+2026-06-16 00:09:03 [WARNING]   Ollama error (attempt 1/2): HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。"))
+2026-06-16 00:09:09 [WARNING]   Ollama error (attempt 2/2): HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。"))
+2026-06-16 00:09:15 [WARNING]   Ollama error (attempt 1/2): HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。"))
+2026-06-16 00:09:21 [WARNING]   Ollama error (attempt 2/2): HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。"))
+2026-06-16 00:11:44 [INFO] ============================================================
+2026-06-16 00:11:44 [INFO] SLM Runtime Benchmarking — LDWS
+2026-06-16 00:11:44 [INFO] Models : ['Qwen2.5 0.5B', 'TinyLlama 1.1B', 'Qwen 1.8B', 'Llama3.2 3B', 'Phi-3 3.8B']
+2026-06-16 00:11:44 [INFO] Runs   : 1
+2026-06-16 00:11:44 [INFO] Prompts: ..\data\prompts.json
+2026-06-16 00:11:44 [INFO] Output : ..\results
+2026-06-16 00:11:44 [INFO] CodeCarbon available: True
+2026-06-16 00:11:44 [INFO] ============================================================
+2026-06-16 00:11:44 [INFO] Loaded 50 prompts from LDWS set
+2026-06-16 00:11:44 [INFO] 
+=== Phase 0: Inference Device Detection ===
+2026-06-16 00:11:46 [INFO]   [Device] qwen2.5:0.5b         → CPU  (ΔVRAM=0 MB, ΔUtil=0%)
+2026-06-16 00:11:48 [INFO]   [Device] tinyllama:latest     → GPU  (ΔVRAM=795 MB, ΔUtil=0%)
+2026-06-16 00:11:53 [INFO]   [Device] qwen:1.8b            → GPU  (ΔVRAM=2081 MB, ΔUtil=0%)
+2026-06-16 00:11:59 [INFO]   [Device] llama3.2:3b          → GPU  (ΔVRAM=660 MB, ΔUtil=0%)
+2026-06-16 00:12:05 [INFO]   [Device] phi3:latest          → CPU  (ΔVRAM=-637 MB, ΔUtil=0%)
+2026-06-16 00:12:05 [INFO]   Device map saved to device_map.json
+2026-06-16 00:12:05 [INFO] 
+[1/5] Model=Qwen2.5 0.5B | Scenario=serial | Run=1
+2026-06-16 00:12:05 [INFO]   [SERIAL] Qwen2.5 0.5B — run 1/1 (50 prompts)
+2026-06-16 00:12:05 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-16 00:12:08 [INFO]   [Cold start] Qwen2.5 0.5B: 2911 ms
+2026-06-16 00:13:21 [INFO]   Saved 50 rows to CSV
+2026-06-16 00:13:21 [INFO]   Cooling down 15s ...
+2026-06-16 00:13:36 [INFO] 
+[2/5] Model=TinyLlama 1.1B | Scenario=serial | Run=1
+2026-06-16 00:13:36 [INFO]   [SERIAL] TinyLlama 1.1B — run 1/1 (50 prompts)
+2026-06-16 00:13:36 [INFO]   [Warmup] TinyLlama 1.1B — 3 rounds
+2026-06-16 00:13:40 [INFO]   [Cold start] TinyLlama 1.1B: 4094 ms
+2026-06-16 00:14:43 [INFO]   Saved 50 rows to CSV
+2026-06-16 00:14:43 [INFO]   Cooling down 15s ...
+2026-06-16 00:14:58 [INFO] 
+[3/5] Model=Qwen 1.8B | Scenario=serial | Run=1
+2026-06-16 00:14:58 [INFO]   [SERIAL] Qwen 1.8B — run 1/1 (50 prompts)
+2026-06-16 00:14:58 [INFO]   [Warmup] Qwen 1.8B — 3 rounds
+2026-06-16 00:15:01 [INFO]   [Cold start] Qwen 1.8B: 2907 ms
+2026-06-16 00:16:32 [INFO]   Saved 50 rows to CSV
+2026-06-16 00:16:32 [INFO]   Cooling down 15s ...
+2026-06-16 00:16:47 [INFO] 
+[4/5] Model=Llama3.2 3B | Scenario=serial | Run=1
+2026-06-16 00:16:47 [INFO]   [SERIAL] Llama3.2 3B — run 1/1 (50 prompts)
+2026-06-16 00:16:47 [INFO]   [Warmup] Llama3.2 3B — 3 rounds
+2026-06-16 00:16:52 [INFO]   [Cold start] Llama3.2 3B: 5156 ms
+2026-06-16 00:19:29 [INFO]   Saved 50 rows to CSV
+2026-06-16 00:19:29 [INFO]   Cooling down 15s ...
+2026-06-16 00:19:44 [INFO] 
+[5/5] Model=Phi-3 3.8B | Scenario=serial | Run=1
+2026-06-16 00:19:44 [INFO]   [SERIAL] Phi-3 3.8B — run 1/1 (50 prompts)
+2026-06-16 00:19:44 [INFO]   [Warmup] Phi-3 3.8B — 3 rounds
+2026-06-16 00:19:47 [INFO]   [Cold start] Phi-3 3.8B: 3101 ms
+2026-06-16 00:22:39 [INFO]   Saved 50 rows to CSV
+2026-06-16 00:22:39 [INFO]   Cooling down 15s ...
+2026-06-16 00:22:54 [INFO] 
+=== Post-processing ===
+2026-06-16 00:22:54 [INFO] ============================================================
+2026-06-16 00:22:54 [INFO] DONE
+2026-06-16 00:22:54 [INFO]   Raw CSV  : ..\results\runtime_results.csv
+2026-06-16 00:22:54 [INFO]   Summary  : ..\results\summary.csv
+2026-06-16 00:22:54 [INFO]   Metadata : ..\results\metadata.json
+2026-06-16 00:22:54 [INFO]   Total requests: 250 (0 outliers flagged)
+2026-06-16 00:22:54 [INFO] ============================================================
+2026-06-20 16:25:53 [INFO] ============================================================
+2026-06-20 16:25:53 [INFO] SLM Runtime Benchmarking — LDWS
+2026-06-20 16:25:53 [INFO] Models : ['Qwen2.5 0.5B', 'TinyLlama 1.1B', 'Qwen 1.8B', 'Llama3.2 3B', 'Phi-3 3.8B']
+2026-06-20 16:25:53 [INFO] Runs   : 1
+2026-06-20 16:25:53 [INFO] Prompts: ..\data\prompts.json
+2026-06-20 16:25:53 [INFO] Output : ..\results
+2026-06-20 16:25:53 [INFO] CodeCarbon available: True
+2026-06-20 16:25:53 [INFO] ============================================================
+2026-06-20 16:25:53 [INFO] 
+=== Hardware Environment ===
+2026-06-20 16:25:54 [INFO]   [Hardware] OS: Windows-11-10.0.22631-SP0
+2026-06-20 16:25:54 [INFO]   [Hardware] CPU: Intel64 Family 6 Model 186 Stepping 2, GenuineIntel (14 physical / 20 logical cores)
+2026-06-20 16:25:54 [INFO]   [Hardware] RAM: 15.65 GB
+2026-06-20 16:25:54 [INFO]   [Hardware] GPU: NVIDIA GeForce RTX 4050 Laptop GPU
+2026-06-20 16:25:54 [INFO] Loaded 50 prompts from LDWS set
+2026-06-20 16:25:54 [INFO] 
+=== Phase 0: Inference Device Detection ===
+2026-06-20 16:25:59 [INFO]   [Device] qwen2.5:0.5b         → GPU  (ΔVRAM=845 MB, ΔUtil=0%)
+2026-06-20 16:26:02 [INFO]   [Device] tinyllama:latest     → GPU  (ΔVRAM=795 MB, ΔUtil=0%)
+2026-06-20 16:26:06 [INFO]   [Device] qwen:1.8b            → GPU  (ΔVRAM=2081 MB, ΔUtil=0%)
+2026-06-20 16:26:13 [INFO]   [Device] llama3.2:3b          → GPU  (ΔVRAM=660 MB, ΔUtil=0%)
+2026-06-20 16:26:19 [INFO]   [Device] phi3:latest          → CPU  (ΔVRAM=-635 MB, ΔUtil=0%)
+2026-06-20 16:26:19 [INFO]   Device map saved to device_map.json
+2026-06-20 16:26:19 [INFO] 
+[1/5] Model=Qwen2.5 0.5B | Scenario=serial | Run=1
+2026-06-20 16:26:19 [INFO]   [SERIAL] Qwen2.5 0.5B — run 1/1 (50 prompts)
+2026-06-20 16:26:19 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-20 16:26:22 [INFO]   [Cold start] Qwen2.5 0.5B: 3081 ms
+2026-06-20 16:27:41 [INFO]   Saved 50 rows to CSV
+2026-06-20 16:27:41 [INFO]   Cooling down 15s ...
+2026-06-20 16:27:56 [INFO] 
+[2/5] Model=TinyLlama 1.1B | Scenario=serial | Run=1
+2026-06-20 16:27:56 [INFO]   [SERIAL] TinyLlama 1.1B — run 1/1 (50 prompts)
+2026-06-20 16:27:56 [INFO]   [Warmup] TinyLlama 1.1B — 3 rounds
+2026-06-20 16:28:00 [INFO]   [Cold start] TinyLlama 1.1B: 3517 ms
+2026-06-20 16:29:04 [INFO]   Saved 50 rows to CSV
+2026-06-20 16:29:04 [INFO]   Cooling down 15s ...
+2026-06-20 16:29:19 [INFO] 
+[3/5] Model=Qwen 1.8B | Scenario=serial | Run=1
+2026-06-20 16:29:19 [INFO]   [SERIAL] Qwen 1.8B — run 1/1 (50 prompts)
+2026-06-20 16:29:19 [INFO]   [Warmup] Qwen 1.8B — 3 rounds
+2026-06-20 16:29:22 [INFO]   [Cold start] Qwen 1.8B: 3637 ms
+2026-06-20 16:31:01 [INFO]   Saved 50 rows to CSV
+2026-06-20 16:31:01 [INFO]   Cooling down 15s ...
+2026-06-20 16:31:16 [INFO] 
+[4/5] Model=Llama3.2 3B | Scenario=serial | Run=1
+2026-06-20 16:31:16 [INFO]   [SERIAL] Llama3.2 3B — run 1/1 (50 prompts)
+2026-06-20 16:31:16 [INFO]   [Warmup] Llama3.2 3B — 3 rounds
+2026-06-20 16:31:21 [INFO]   [Cold start] Llama3.2 3B: 4753 ms
+2026-06-20 16:34:08 [INFO]   Saved 50 rows to CSV
+2026-06-20 16:34:08 [INFO]   Cooling down 15s ...
+2026-06-20 16:34:23 [INFO] 
+[5/5] Model=Phi-3 3.8B | Scenario=serial | Run=1
+2026-06-20 16:34:23 [INFO]   [SERIAL] Phi-3 3.8B — run 1/1 (50 prompts)
+2026-06-20 16:34:23 [INFO]   [Warmup] Phi-3 3.8B — 3 rounds
+2026-06-20 16:34:27 [INFO]   [Cold start] Phi-3 3.8B: 3455 ms
+2026-06-20 16:37:20 [INFO]   Saved 50 rows to CSV
+2026-06-20 16:37:20 [INFO]   Cooling down 15s ...
+2026-06-20 16:37:35 [INFO] 
+=== Post-processing ===
+2026-06-20 16:37:35 [INFO] ============================================================
+2026-06-20 16:37:35 [INFO] DONE
+2026-06-20 16:37:35 [INFO]   Raw CSV  : ..\results\runtime_results.csv
+2026-06-20 16:37:35 [INFO]   Summary  : ..\results\summary.csv
+2026-06-20 16:37:35 [INFO]   Metadata : ..\results\metadata.json
+2026-06-20 16:37:35 [INFO]   Total requests: 250 (0 outliers flagged)
+2026-06-20 16:37:35 [INFO] ============================================================
+2026-06-25 15:16:32 [INFO] ============================================================
+2026-06-25 15:16:32 [INFO] SLM Runtime Benchmarking — LDWS
+2026-06-25 15:16:32 [INFO] Models : ['Qwen2.5 0.5B', 'TinyLlama 1.1B', 'Qwen 1.8B', 'Llama3.2 3B', 'Phi-3 3.8B']
+2026-06-25 15:16:32 [INFO] Runs   : 3
+2026-06-25 15:16:32 [INFO] Prompts: ..\data\prompts.json
+2026-06-25 15:16:32 [INFO] Output : ..\results
+2026-06-25 15:16:32 [INFO] CodeCarbon available: True
+2026-06-25 15:16:32 [INFO] ============================================================
+2026-06-25 15:16:32 [INFO] 
+=== Hardware Environment ===
+2026-06-25 15:16:32 [INFO]   [Hardware] OS: Windows-11-10.0.22631-SP0
+2026-06-25 15:16:32 [INFO]   [Hardware] CPU: Intel64 Family 6 Model 186 Stepping 2, GenuineIntel (14 physical / 20 logical cores)
+2026-06-25 15:16:32 [INFO]   [Hardware] RAM: 15.65 GB
+2026-06-25 15:16:32 [INFO]   [Hardware] GPU: NVIDIA GeForce RTX 4050 Laptop GPU
+2026-06-25 15:16:32 [INFO] Loaded 50 prompts from LDWS set
+2026-06-25 15:16:32 [INFO] 
+=== Phase 0: Inference Device Detection ===
+2026-06-25 15:16:37 [INFO]   [Device] qwen2.5:0.5b         → GPU  (ΔVRAM=845 MB, ΔUtil=0%)
+2026-06-25 15:16:40 [INFO]   [Device] tinyllama:latest     → GPU  (ΔVRAM=795 MB, ΔUtil=0%)
+2026-06-25 15:16:44 [INFO]   [Device] qwen:1.8b            → GPU  (ΔVRAM=2081 MB, ΔUtil=0%)
+2026-06-25 15:16:49 [INFO]   [Device] llama3.2:3b          → GPU  (ΔVRAM=660 MB, ΔUtil=0%)
+2026-06-25 15:16:55 [INFO]   [Device] phi3:latest          → CPU  (ΔVRAM=-635 MB, ΔUtil=0%)
+2026-06-25 15:16:55 [INFO]   Device map saved to device_map.json
+2026-06-25 15:16:55 [INFO] 
+=== Measuring Idle Baseline (60s) ===
+2026-06-25 15:17:55 [INFO]   Idle baseline — CPU: 3.0%
+2026-06-25 15:17:55 [INFO] 
+[1/45] Model=Qwen2.5 0.5B | Scenario=serial | Run=1
+2026-06-25 15:17:55 [INFO]   [SERIAL] Qwen2.5 0.5B — run 1/3 (50 prompts)
+2026-06-25 15:17:55 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-25 15:17:59 [INFO]   [Cold start] Qwen2.5 0.5B: 3842 ms
+2026-06-25 15:19:17 [INFO]   Saved 50 rows to CSV
+2026-06-25 15:19:17 [INFO]   Cooling down 15s ...
+2026-06-25 15:19:32 [INFO] 
+[2/45] Model=Qwen2.5 0.5B | Scenario=high_load | Run=1
+2026-06-25 15:19:32 [INFO]   [HIGH_LOAD] Qwen2.5 0.5B — run 1/3 (50 prompts)
+2026-06-25 15:19:32 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-25 15:19:33 [INFO]   [Cold start] Qwen2.5 0.5B: 819 ms
+2026-06-25 15:20:42 [INFO]   Saved 50 rows to CSV
+2026-06-25 15:20:42 [INFO]   Cooling down 15s ...
+2026-06-25 15:20:57 [INFO] 
+[3/45] Model=Qwen2.5 0.5B | Scenario=concurrent | Run=1
+2026-06-25 15:20:57 [INFO]   [CONCURRENT] Qwen2.5 0.5B — run 1/3 (50 prompts, 4 parallel)
+2026-06-25 15:20:57 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-25 15:20:58 [INFO]   [Cold start] Qwen2.5 0.5B: 835 ms
+2026-06-25 15:21:55 [INFO]   Saved 50 rows to CSV
+2026-06-25 15:21:55 [INFO]   Cooling down 15s ...
+2026-06-25 15:22:10 [INFO] 
+[4/45] Model=TinyLlama 1.1B | Scenario=serial | Run=1
+2026-06-25 15:22:10 [INFO]   [SERIAL] TinyLlama 1.1B — run 1/3 (50 prompts)
+2026-06-25 15:22:10 [INFO]   [Warmup] TinyLlama 1.1B — 3 rounds
+2026-06-25 15:22:13 [INFO]   [Cold start] TinyLlama 1.1B: 2674 ms
+2026-06-25 15:23:17 [INFO]   Saved 50 rows to CSV
+2026-06-25 15:23:17 [INFO]   Cooling down 15s ...
+2026-06-25 15:23:32 [INFO] 
+[5/45] Model=TinyLlama 1.1B | Scenario=high_load | Run=1
+2026-06-25 15:23:32 [INFO]   [HIGH_LOAD] TinyLlama 1.1B — run 1/3 (50 prompts)
+2026-06-25 15:23:32 [INFO]   [Warmup] TinyLlama 1.1B — 3 rounds
+2026-06-25 15:23:34 [INFO]   [Cold start] TinyLlama 1.1B: 1568 ms
+2026-06-25 15:24:33 [INFO]   Saved 50 rows to CSV
+2026-06-25 15:24:33 [INFO]   Cooling down 15s ...
+2026-06-25 15:24:48 [INFO] 
+[6/45] Model=TinyLlama 1.1B | Scenario=concurrent | Run=1
+2026-06-25 15:24:48 [INFO]   [CONCURRENT] TinyLlama 1.1B — run 1/3 (50 prompts, 4 parallel)
+2026-06-25 15:24:48 [INFO]   [Warmup] TinyLlama 1.1B — 3 rounds
+2026-06-25 15:24:49 [INFO]   [Cold start] TinyLlama 1.1B: 1590 ms
+2026-06-25 15:25:45 [INFO]   Saved 50 rows to CSV
+2026-06-25 15:25:45 [INFO]   Cooling down 15s ...
+2026-06-25 15:26:00 [INFO] 
+[7/45] Model=Qwen 1.8B | Scenario=serial | Run=1
+2026-06-25 15:26:00 [INFO]   [SERIAL] Qwen 1.8B — run 1/3 (50 prompts)
+2026-06-25 15:26:00 [INFO]   [Warmup] Qwen 1.8B — 3 rounds
+2026-06-25 15:26:04 [INFO]   [Cold start] Qwen 1.8B: 3722 ms
+2026-06-25 15:27:42 [INFO]   Saved 50 rows to CSV
+2026-06-25 15:27:42 [INFO]   Cooling down 15s ...
+2026-06-25 15:27:57 [INFO] 
+[8/45] Model=Qwen 1.8B | Scenario=high_load | Run=1
+2026-06-25 15:27:57 [INFO]   [HIGH_LOAD] Qwen 1.8B — run 1/3 (50 prompts)
+2026-06-25 15:27:57 [INFO]   [Warmup] Qwen 1.8B — 3 rounds
+2026-06-25 15:27:58 [INFO]   [Cold start] Qwen 1.8B: 1220 ms
+2026-06-25 15:29:30 [INFO]   Saved 50 rows to CSV
+2026-06-25 15:29:30 [INFO]   Cooling down 15s ...
+2026-06-25 15:29:45 [INFO] 
+[9/45] Model=Qwen 1.8B | Scenario=concurrent | Run=1
+2026-06-25 15:29:45 [INFO]   [CONCURRENT] Qwen 1.8B — run 1/3 (50 prompts, 4 parallel)
+2026-06-25 15:29:45 [INFO]   [Warmup] Qwen 1.8B — 3 rounds
+2026-06-25 15:29:46 [INFO]   [Cold start] Qwen 1.8B: 1217 ms
+2026-06-25 15:31:06 [INFO]   Saved 50 rows to CSV
+2026-06-25 15:31:06 [INFO]   Cooling down 15s ...
+2026-06-25 15:31:21 [INFO] 
+[10/45] Model=Llama3.2 3B | Scenario=serial | Run=1
+2026-06-25 15:31:21 [INFO]   [SERIAL] Llama3.2 3B — run 1/3 (50 prompts)
+2026-06-25 15:31:21 [INFO]   [Warmup] Llama3.2 3B — 3 rounds
+2026-06-25 15:31:25 [INFO]   [Cold start] Llama3.2 3B: 4183 ms
+2026-06-25 15:34:11 [INFO]   Saved 50 rows to CSV
+2026-06-25 15:34:11 [INFO]   Cooling down 15s ...
+2026-06-25 15:34:26 [INFO] 
+[11/45] Model=Llama3.2 3B | Scenario=high_load | Run=1
+2026-06-25 15:34:26 [INFO]   [HIGH_LOAD] Llama3.2 3B — run 1/3 (50 prompts)
+2026-06-25 15:34:26 [INFO]   [Warmup] Llama3.2 3B — 3 rounds
+2026-06-25 15:34:27 [INFO]   [Cold start] Llama3.2 3B: 855 ms
+2026-06-25 15:37:08 [INFO]   Saved 50 rows to CSV
+2026-06-25 15:37:08 [INFO]   Cooling down 15s ...
+2026-06-25 15:37:23 [INFO] 
+[12/45] Model=Llama3.2 3B | Scenario=concurrent | Run=1
+2026-06-25 15:37:23 [INFO]   [CONCURRENT] Llama3.2 3B — run 1/3 (50 prompts, 4 parallel)
+2026-06-25 15:37:23 [INFO]   [Warmup] Llama3.2 3B — 3 rounds
+2026-06-25 15:37:24 [INFO]   [Cold start] Llama3.2 3B: 954 ms
+2026-06-25 15:39:45 [INFO]   Saved 50 rows to CSV
+2026-06-25 15:39:45 [INFO]   Cooling down 15s ...
+2026-06-25 15:40:00 [INFO] 
+[13/45] Model=Phi-3 3.8B | Scenario=serial | Run=1
+2026-06-25 15:40:00 [INFO]   [SERIAL] Phi-3 3.8B — run 1/3 (50 prompts)
+2026-06-25 15:40:00 [INFO]   [Warmup] Phi-3 3.8B — 3 rounds
+2026-06-25 15:40:03 [INFO]   [Cold start] Phi-3 3.8B: 3747 ms
+2026-06-25 15:42:55 [INFO]   Saved 50 rows to CSV
+2026-06-25 15:42:55 [INFO]   Cooling down 15s ...
+2026-06-25 15:43:10 [INFO] 
+[14/45] Model=Phi-3 3.8B | Scenario=high_load | Run=1
+2026-06-25 15:43:10 [INFO]   [HIGH_LOAD] Phi-3 3.8B — run 1/3 (50 prompts)
+2026-06-25 15:43:10 [INFO]   [Warmup] Phi-3 3.8B — 3 rounds
+2026-06-25 15:43:11 [INFO]   [Cold start] Phi-3 3.8B: 469 ms
+2026-06-25 15:45:58 [INFO]   Saved 50 rows to CSV
+2026-06-25 15:45:58 [INFO]   Cooling down 15s ...
+2026-06-25 15:46:13 [INFO] 
+[15/45] Model=Phi-3 3.8B | Scenario=concurrent | Run=1
+2026-06-25 15:46:13 [INFO]   [CONCURRENT] Phi-3 3.8B — run 1/3 (50 prompts, 4 parallel)
+2026-06-25 15:46:13 [INFO]   [Warmup] Phi-3 3.8B — 3 rounds
+2026-06-25 15:46:13 [INFO]   [Cold start] Phi-3 3.8B: 509 ms
+2026-06-25 15:48:59 [INFO]   Saved 50 rows to CSV
+2026-06-25 15:48:59 [INFO]   Cooling down 15s ...
+2026-06-25 15:49:14 [INFO] 
+[16/45] Model=Qwen2.5 0.5B | Scenario=serial | Run=2
+2026-06-25 15:49:14 [INFO]   [SERIAL] Qwen2.5 0.5B — run 2/3 (50 prompts)
+2026-06-25 15:49:14 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-25 15:49:17 [INFO]   [Cold start] Qwen2.5 0.5B: 2926 ms
+2026-06-25 15:50:31 [INFO]   Saved 50 rows to CSV
+2026-06-25 15:50:31 [INFO]   Cooling down 15s ...
+2026-06-25 15:50:46 [INFO] 
+[17/45] Model=Qwen2.5 0.5B | Scenario=high_load | Run=2
+2026-06-25 15:50:46 [INFO]   [HIGH_LOAD] Qwen2.5 0.5B — run 2/3 (50 prompts)
+2026-06-25 15:50:46 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-25 15:50:47 [INFO]   [Cold start] Qwen2.5 0.5B: 785 ms
+2026-06-25 15:51:56 [INFO]   Saved 50 rows to CSV
+2026-06-25 15:51:56 [INFO]   Cooling down 15s ...
+2026-06-25 15:52:11 [INFO] 
+[18/45] Model=Qwen2.5 0.5B | Scenario=concurrent | Run=2
+2026-06-25 15:52:11 [INFO]   [CONCURRENT] Qwen2.5 0.5B — run 2/3 (50 prompts, 4 parallel)
+2026-06-25 15:52:11 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-25 15:52:12 [INFO]   [Cold start] Qwen2.5 0.5B: 845 ms
+2026-06-25 15:53:07 [INFO]   Saved 50 rows to CSV
+2026-06-25 15:53:07 [INFO]   Cooling down 15s ...
+2026-06-25 15:53:22 [INFO] 
+[19/45] Model=TinyLlama 1.1B | Scenario=serial | Run=2
+2026-06-25 15:53:22 [INFO]   [SERIAL] TinyLlama 1.1B — run 2/3 (50 prompts)
+2026-06-25 15:53:22 [INFO]   [Warmup] TinyLlama 1.1B — 3 rounds
+2026-06-25 15:53:25 [INFO]   [Cold start] TinyLlama 1.1B: 3562 ms
+2026-06-25 15:54:29 [INFO]   Saved 50 rows to CSV
+2026-06-25 15:54:29 [INFO]   Cooling down 15s ...
+2026-06-25 15:54:44 [INFO] 
+[20/45] Model=TinyLlama 1.1B | Scenario=high_load | Run=2
+2026-06-25 15:54:44 [INFO]   [HIGH_LOAD] TinyLlama 1.1B — run 2/3 (50 prompts)
+2026-06-25 15:54:44 [INFO]   [Warmup] TinyLlama 1.1B — 3 rounds
+2026-06-25 15:54:46 [INFO]   [Cold start] TinyLlama 1.1B: 1530 ms
+2026-06-25 15:55:45 [INFO]   Saved 50 rows to CSV
+2026-06-25 15:55:45 [INFO]   Cooling down 15s ...
+2026-06-25 15:56:00 [INFO] 
+[21/45] Model=TinyLlama 1.1B | Scenario=concurrent | Run=2
+2026-06-25 15:56:00 [INFO]   [CONCURRENT] TinyLlama 1.1B — run 2/3 (50 prompts, 4 parallel)
+2026-06-25 15:56:00 [INFO]   [Warmup] TinyLlama 1.1B — 3 rounds
+2026-06-25 15:56:01 [INFO]   [Cold start] TinyLlama 1.1B: 1503 ms
+2026-06-25 15:56:57 [INFO]   Saved 50 rows to CSV
+2026-06-25 15:56:57 [INFO]   Cooling down 15s ...
+2026-06-25 15:57:12 [INFO] 
+[22/45] Model=Qwen 1.8B | Scenario=serial | Run=2
+2026-06-25 15:57:12 [INFO]   [SERIAL] Qwen 1.8B — run 2/3 (50 prompts)
+2026-06-25 15:57:12 [INFO]   [Warmup] Qwen 1.8B — 3 rounds
+2026-06-25 15:57:15 [INFO]   [Cold start] Qwen 1.8B: 3598 ms
+2026-06-25 15:58:53 [INFO]   Saved 50 rows to CSV
+2026-06-25 15:58:53 [INFO]   Cooling down 15s ...
+2026-06-25 15:59:08 [INFO] 
+[23/45] Model=Qwen 1.8B | Scenario=high_load | Run=2
+2026-06-25 15:59:08 [INFO]   [HIGH_LOAD] Qwen 1.8B — run 2/3 (50 prompts)
+2026-06-25 15:59:08 [INFO]   [Warmup] Qwen 1.8B — 3 rounds
+2026-06-25 15:59:09 [INFO]   [Cold start] Qwen 1.8B: 1299 ms
+2026-06-25 16:00:42 [INFO]   Saved 50 rows to CSV
+2026-06-25 16:00:42 [INFO]   Cooling down 15s ...
+2026-06-25 16:00:57 [INFO] 
+[24/45] Model=Qwen 1.8B | Scenario=concurrent | Run=2
+2026-06-25 16:00:57 [INFO]   [CONCURRENT] Qwen 1.8B — run 2/3 (50 prompts, 4 parallel)
+2026-06-25 16:00:57 [INFO]   [Warmup] Qwen 1.8B — 3 rounds
+2026-06-25 16:00:58 [INFO]   [Cold start] Qwen 1.8B: 1268 ms
+2026-06-25 16:02:16 [INFO]   Saved 50 rows to CSV
+2026-06-25 16:02:16 [INFO]   Cooling down 15s ...
+2026-06-25 16:02:31 [INFO] 
+[25/45] Model=Llama3.2 3B | Scenario=serial | Run=2
+2026-06-25 16:02:31 [INFO]   [SERIAL] Llama3.2 3B — run 2/3 (50 prompts)
+2026-06-25 16:02:31 [INFO]   [Warmup] Llama3.2 3B — 3 rounds
+2026-06-25 16:02:35 [INFO]   [Cold start] Llama3.2 3B: 3728 ms
+2026-06-25 16:05:18 [INFO]   Saved 50 rows to CSV
+2026-06-25 16:05:18 [INFO]   Cooling down 15s ...
+2026-06-25 16:05:33 [INFO] 
+[26/45] Model=Llama3.2 3B | Scenario=high_load | Run=2
+2026-06-25 16:05:33 [INFO]   [HIGH_LOAD] Llama3.2 3B — run 2/3 (50 prompts)
+2026-06-25 16:05:33 [INFO]   [Warmup] Llama3.2 3B — 3 rounds
+2026-06-25 16:05:34 [INFO]   [Cold start] Llama3.2 3B: 986 ms
+2026-06-25 16:08:13 [INFO]   Saved 50 rows to CSV
+2026-06-25 16:08:13 [INFO]   Cooling down 15s ...
+2026-06-25 16:08:28 [INFO] 
+[27/45] Model=Llama3.2 3B | Scenario=concurrent | Run=2
+2026-06-25 16:08:28 [INFO]   [CONCURRENT] Llama3.2 3B — run 2/3 (50 prompts, 4 parallel)
+2026-06-25 16:08:28 [INFO]   [Warmup] Llama3.2 3B — 3 rounds
+2026-06-25 16:08:29 [INFO]   [Cold start] Llama3.2 3B: 998 ms
+2026-06-25 16:10:50 [INFO]   Saved 50 rows to CSV
+2026-06-25 16:10:50 [INFO]   Cooling down 15s ...
+2026-06-25 16:11:05 [INFO] 
+[28/45] Model=Phi-3 3.8B | Scenario=serial | Run=2
+2026-06-25 16:11:05 [INFO]   [SERIAL] Phi-3 3.8B — run 2/3 (50 prompts)
+2026-06-25 16:11:05 [INFO]   [Warmup] Phi-3 3.8B — 3 rounds
+2026-06-25 16:11:07 [INFO]   [Cold start] Phi-3 3.8B: 2350 ms
+2026-06-25 16:13:59 [INFO]   Saved 50 rows to CSV
+2026-06-25 16:13:59 [INFO]   Cooling down 15s ...
+2026-06-25 16:14:14 [INFO] 
+[29/45] Model=Phi-3 3.8B | Scenario=high_load | Run=2
+2026-06-25 16:14:14 [INFO]   [HIGH_LOAD] Phi-3 3.8B — run 2/3 (50 prompts)
+2026-06-25 16:14:14 [INFO]   [Warmup] Phi-3 3.8B — 3 rounds
+2026-06-25 16:14:15 [INFO]   [Cold start] Phi-3 3.8B: 496 ms
+2026-06-25 16:17:02 [INFO]   Saved 50 rows to CSV
+2026-06-25 16:17:02 [INFO]   Cooling down 15s ...
+2026-06-25 16:17:17 [INFO] 
+[30/45] Model=Phi-3 3.8B | Scenario=concurrent | Run=2
+2026-06-25 16:17:17 [INFO]   [CONCURRENT] Phi-3 3.8B — run 2/3 (50 prompts, 4 parallel)
+2026-06-25 16:17:17 [INFO]   [Warmup] Phi-3 3.8B — 3 rounds
+2026-06-25 16:17:18 [INFO]   [Cold start] Phi-3 3.8B: 633 ms
+2026-06-25 16:20:03 [INFO]   Saved 50 rows to CSV
+2026-06-25 16:20:03 [INFO]   Cooling down 15s ...
+2026-06-25 16:20:18 [INFO] 
+[31/45] Model=Qwen2.5 0.5B | Scenario=serial | Run=3
+2026-06-25 16:20:18 [INFO]   [SERIAL] Qwen2.5 0.5B — run 3/3 (50 prompts)
+2026-06-25 16:20:18 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-25 16:20:21 [INFO]   [Cold start] Qwen2.5 0.5B: 2657 ms
+2026-06-25 16:21:36 [INFO]   Saved 50 rows to CSV
+2026-06-25 16:21:36 [INFO]   Cooling down 15s ...
+2026-06-25 16:21:51 [INFO] 
+[32/45] Model=Qwen2.5 0.5B | Scenario=high_load | Run=3
+2026-06-25 16:21:51 [INFO]   [HIGH_LOAD] Qwen2.5 0.5B — run 3/3 (50 prompts)
+2026-06-25 16:21:51 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-25 16:21:51 [INFO]   [Cold start] Qwen2.5 0.5B: 737 ms
+2026-06-25 16:23:01 [INFO]   Saved 50 rows to CSV
+2026-06-25 16:23:01 [INFO]   Cooling down 15s ...
+2026-06-25 16:23:16 [INFO] 
+[33/45] Model=Qwen2.5 0.5B | Scenario=concurrent | Run=3
+2026-06-25 16:23:16 [INFO]   [CONCURRENT] Qwen2.5 0.5B — run 3/3 (50 prompts, 4 parallel)
+2026-06-25 16:23:16 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-25 16:23:16 [INFO]   [Cold start] Qwen2.5 0.5B: 841 ms
+2026-06-25 16:24:12 [INFO]   Saved 50 rows to CSV
+2026-06-25 16:24:12 [INFO]   Cooling down 15s ...
+2026-06-25 16:24:27 [INFO] 
+[34/45] Model=TinyLlama 1.1B | Scenario=serial | Run=3
+2026-06-25 16:24:27 [INFO]   [SERIAL] TinyLlama 1.1B — run 3/3 (50 prompts)
+2026-06-25 16:24:27 [INFO]   [Warmup] TinyLlama 1.1B — 3 rounds
+2026-06-25 16:24:30 [INFO]   [Cold start] TinyLlama 1.1B: 3251 ms
+2026-06-25 16:25:34 [INFO]   Saved 50 rows to CSV
+2026-06-25 16:25:34 [INFO]   Cooling down 15s ...
+2026-06-25 16:25:49 [INFO] 
+[35/45] Model=TinyLlama 1.1B | Scenario=high_load | Run=3
+2026-06-25 16:25:49 [INFO]   [HIGH_LOAD] TinyLlama 1.1B — run 3/3 (50 prompts)
+2026-06-25 16:25:49 [INFO]   [Warmup] TinyLlama 1.1B — 3 rounds
+2026-06-25 16:25:51 [INFO]   [Cold start] TinyLlama 1.1B: 1604 ms
+2026-06-25 16:26:50 [INFO]   Saved 50 rows to CSV
+2026-06-25 16:26:50 [INFO]   Cooling down 15s ...
+2026-06-25 16:27:05 [INFO] 
+[36/45] Model=TinyLlama 1.1B | Scenario=concurrent | Run=3
+2026-06-25 16:27:05 [INFO]   [CONCURRENT] TinyLlama 1.1B — run 3/3 (50 prompts, 4 parallel)
+2026-06-25 16:27:05 [INFO]   [Warmup] TinyLlama 1.1B — 3 rounds
+2026-06-25 16:27:06 [INFO]   [Cold start] TinyLlama 1.1B: 1569 ms
+2026-06-25 16:28:01 [INFO]   Saved 50 rows to CSV
+2026-06-25 16:28:01 [INFO]   Cooling down 15s ...
+2026-06-25 16:28:16 [INFO] 
+[37/45] Model=Qwen 1.8B | Scenario=serial | Run=3
+2026-06-25 16:28:16 [INFO]   [SERIAL] Qwen 1.8B — run 3/3 (50 prompts)
+2026-06-25 16:28:16 [INFO]   [Warmup] Qwen 1.8B — 3 rounds
+2026-06-25 16:28:20 [INFO]   [Cold start] Qwen 1.8B: 3036 ms
+2026-06-25 16:29:57 [INFO]   Saved 50 rows to CSV
+2026-06-25 16:29:57 [INFO]   Cooling down 15s ...
+2026-06-25 16:30:12 [INFO] 
+[38/45] Model=Qwen 1.8B | Scenario=high_load | Run=3
+2026-06-25 16:30:12 [INFO]   [HIGH_LOAD] Qwen 1.8B — run 3/3 (50 prompts)
+2026-06-25 16:30:12 [INFO]   [Warmup] Qwen 1.8B — 3 rounds
+2026-06-25 16:30:14 [INFO]   [Cold start] Qwen 1.8B: 1341 ms
+2026-06-25 16:31:46 [INFO]   Saved 50 rows to CSV
+2026-06-25 16:31:46 [INFO]   Cooling down 15s ...
+2026-06-25 16:32:01 [INFO] 
+[39/45] Model=Qwen 1.8B | Scenario=concurrent | Run=3
+2026-06-25 16:32:01 [INFO]   [CONCURRENT] Qwen 1.8B — run 3/3 (50 prompts, 4 parallel)
+2026-06-25 16:32:01 [INFO]   [Warmup] Qwen 1.8B — 3 rounds
+2026-06-25 16:32:03 [INFO]   [Cold start] Qwen 1.8B: 1383 ms
+2026-06-25 16:33:21 [INFO]   Saved 50 rows to CSV
+2026-06-25 16:33:21 [INFO]   Cooling down 15s ...
+2026-06-25 16:33:36 [INFO] 
+[40/45] Model=Llama3.2 3B | Scenario=serial | Run=3
+2026-06-25 16:33:36 [INFO]   [SERIAL] Llama3.2 3B — run 3/3 (50 prompts)
+2026-06-25 16:33:36 [INFO]   [Warmup] Llama3.2 3B — 3 rounds
+2026-06-25 16:33:39 [INFO]   [Cold start] Llama3.2 3B: 3184 ms
+2026-06-25 16:36:23 [INFO]   Saved 50 rows to CSV
+2026-06-25 16:36:23 [INFO]   Cooling down 15s ...
+2026-06-25 16:36:38 [INFO] 
+[41/45] Model=Llama3.2 3B | Scenario=high_load | Run=3
+2026-06-25 16:36:38 [INFO]   [HIGH_LOAD] Llama3.2 3B — run 3/3 (50 prompts)
+2026-06-25 16:36:38 [INFO]   [Warmup] Llama3.2 3B — 3 rounds
+2026-06-25 16:36:39 [INFO]   [Cold start] Llama3.2 3B: 930 ms
+2026-06-25 16:39:17 [INFO]   Saved 50 rows to CSV
+2026-06-25 16:39:17 [INFO]   Cooling down 15s ...
+2026-06-25 16:39:32 [INFO] 
+[42/45] Model=Llama3.2 3B | Scenario=concurrent | Run=3
+2026-06-25 16:39:32 [INFO]   [CONCURRENT] Llama3.2 3B — run 3/3 (50 prompts, 4 parallel)
+2026-06-25 16:39:32 [INFO]   [Warmup] Llama3.2 3B — 3 rounds
+2026-06-25 16:39:33 [INFO]   [Cold start] Llama3.2 3B: 948 ms
+2026-06-25 16:41:54 [INFO]   Saved 50 rows to CSV
+2026-06-25 16:41:54 [INFO]   Cooling down 15s ...
+2026-06-25 16:42:09 [INFO] 
+[43/45] Model=Phi-3 3.8B | Scenario=serial | Run=3
+2026-06-25 16:42:09 [INFO]   [SERIAL] Phi-3 3.8B — run 3/3 (50 prompts)
+2026-06-25 16:42:09 [INFO]   [Warmup] Phi-3 3.8B — 3 rounds
+2026-06-25 16:42:11 [INFO]   [Cold start] Phi-3 3.8B: 2377 ms
+2026-06-25 16:45:03 [INFO]   Saved 50 rows to CSV
+2026-06-25 16:45:03 [INFO]   Cooling down 15s ...
+2026-06-25 16:45:18 [INFO] 
+[44/45] Model=Phi-3 3.8B | Scenario=high_load | Run=3
+2026-06-25 16:45:18 [INFO]   [HIGH_LOAD] Phi-3 3.8B — run 3/3 (50 prompts)
+2026-06-25 16:45:18 [INFO]   [Warmup] Phi-3 3.8B — 3 rounds
+2026-06-25 16:45:19 [INFO]   [Cold start] Phi-3 3.8B: 580 ms
+2026-06-25 16:48:06 [INFO]   Saved 50 rows to CSV
+2026-06-25 16:48:06 [INFO]   Cooling down 15s ...
+2026-06-25 16:48:21 [INFO] 
+[45/45] Model=Phi-3 3.8B | Scenario=concurrent | Run=3
+2026-06-25 16:48:21 [INFO]   [CONCURRENT] Phi-3 3.8B — run 3/3 (50 prompts, 4 parallel)
+2026-06-25 16:48:21 [INFO]   [Warmup] Phi-3 3.8B — 3 rounds
+2026-06-25 16:48:22 [INFO]   [Cold start] Phi-3 3.8B: 603 ms
+2026-06-25 16:51:07 [INFO]   Saved 50 rows to CSV
+2026-06-25 16:51:07 [INFO]   Cooling down 15s ...
+2026-06-25 16:51:22 [INFO] 
+=== Post-processing ===
+2026-06-25 16:51:23 [INFO] ============================================================
+2026-06-25 16:51:23 [INFO] DONE
+2026-06-25 16:51:23 [INFO]   Raw CSV  : ..\results\runtime_results.csv
+2026-06-25 16:51:23 [INFO]   Summary  : ..\results\summary.csv
+2026-06-25 16:51:23 [INFO]   Metadata : ..\results\metadata.json
+2026-06-25 16:51:23 [INFO]   Total requests: 2250 (0 outliers flagged)
+2026-06-25 16:51:23 [INFO] ============================================================
+2026-06-27 04:20:03 [INFO] ============================================================
+2026-06-27 04:20:03 [INFO] SLM Runtime Benchmarking — LDWS
+2026-06-27 04:20:03 [INFO] Models : ['Qwen2.5 0.5B', 'TinyLlama 1.1B', 'Qwen2 1.5B', 'Llama3.2 3B', 'Phi-3 3.8B']
+2026-06-27 04:20:03 [INFO] Runs   : 1
+2026-06-27 04:20:03 [INFO] Prompts: ..\data\prompts.json
+2026-06-27 04:20:03 [INFO] Output : ..\results
+2026-06-27 04:20:03 [INFO] CodeCarbon available: True
+2026-06-27 04:20:03 [INFO] ============================================================
+2026-06-27 04:20:03 [INFO] 
+=== Hardware Environment ===
+2026-06-27 04:20:03 [INFO]   [Hardware] OS: Windows-11-10.0.22631-SP0
+2026-06-27 04:20:03 [INFO]   [Hardware] CPU: Intel64 Family 6 Model 186 Stepping 2, GenuineIntel (14 physical / 20 logical cores)
+2026-06-27 04:20:03 [INFO]   [Hardware] RAM: 15.65 GB
+2026-06-27 04:20:03 [INFO]   [Hardware] GPU: NVIDIA GeForce RTX 4050 Laptop GPU
+2026-06-27 04:20:03 [INFO] Loaded 50 prompts from LDWS set
+2026-06-27 04:20:03 [INFO] 
+=== Phase 0: Inference Device Detection ===
+2026-06-27 04:20:06 [INFO]   [Device] qwen2.5:0.5b         → GPU  (ΔVRAM=845 MB, ΔUtil=0%)
+2026-06-27 04:20:09 [INFO]   [Device] tinyllama:latest     → GPU  (ΔVRAM=795 MB, ΔUtil=0%)
+2026-06-27 04:20:26 [INFO]   [Device] qwen2:1.5b           → GPU  (ΔVRAM=1417 MB, ΔUtil=0%)
+2026-06-27 04:20:32 [INFO]   [Device] llama3.2:3b          → GPU  (ΔVRAM=1946 MB, ΔUtil=0%)
+2026-06-27 04:20:38 [INFO]   [Device] phi3:latest          → CPU  (ΔVRAM=-1257 MB, ΔUtil=0%)
+2026-06-27 04:20:38 [INFO]   Device map saved to device_map.json
+2026-06-27 04:20:39 [INFO] Resuming — 2250 individual request(s) already completed
+2026-06-27 04:20:39 [INFO]   [SKIP] qwen2.5:0.5b / serial / run 0 (already complete)
+2026-06-27 04:20:39 [INFO]   [SKIP] qwen2.5:0.5b / high_load / run 0 (already complete)
+2026-06-27 04:20:39 [INFO]   [SKIP] qwen2.5:0.5b / concurrent / run 0 (already complete)
+2026-06-27 04:20:39 [INFO]   [SKIP] tinyllama:latest / serial / run 0 (already complete)
+2026-06-27 04:20:39 [INFO]   [SKIP] tinyllama:latest / high_load / run 0 (already complete)
+2026-06-27 04:20:39 [INFO]   [SKIP] tinyllama:latest / concurrent / run 0 (already complete)
+2026-06-27 04:20:39 [INFO] 
+[7/15] Model=Qwen2 1.5B | Scenario=serial | Run=1
+2026-06-27 04:20:39 [INFO]   [SERIAL] Qwen2 1.5B — run 1/1 (50 prompts)
+2026-06-27 04:20:39 [INFO]   [Warmup] Qwen2 1.5B — 3 rounds
+2026-06-27 04:20:42 [INFO]   [Cold start] Qwen2 1.5B: 2929 ms
+2026-06-27 04:22:17 [INFO]   Saved 50 rows to CSV
+2026-06-27 04:22:17 [INFO]   Cooling down 15s ...
+2026-06-27 04:22:32 [INFO] 
+[8/15] Model=Qwen2 1.5B | Scenario=high_load | Run=1
+2026-06-27 04:22:32 [INFO]   [HIGH_LOAD] Qwen2 1.5B — run 1/1 (50 prompts)
+2026-06-27 04:22:32 [INFO]   [Warmup] Qwen2 1.5B — 3 rounds
+2026-06-27 04:22:32 [INFO]   [Cold start] Qwen2 1.5B: 670 ms
+2026-06-27 04:24:00 [INFO]   Saved 50 rows to CSV
+2026-06-27 04:24:00 [INFO]   Cooling down 15s ...
+2026-06-27 04:24:15 [INFO] 
+[9/15] Model=Qwen2 1.5B | Scenario=concurrent | Run=1
+2026-06-27 04:24:15 [INFO]   [CONCURRENT] Qwen2 1.5B — run 1/1 (50 prompts, 4 parallel)
+2026-06-27 04:24:15 [INFO]   [Warmup] Qwen2 1.5B — 3 rounds
+2026-06-27 04:24:15 [INFO]   [Cold start] Qwen2 1.5B: 557 ms
+2026-06-27 04:25:31 [INFO]   Saved 50 rows to CSV
+2026-06-27 04:25:31 [INFO]   Cooling down 15s ...
+2026-06-27 04:25:46 [INFO]   [SKIP] llama3.2:3b / serial / run 0 (already complete)
+2026-06-27 04:25:46 [INFO]   [SKIP] llama3.2:3b / high_load / run 0 (already complete)
+2026-06-27 04:25:46 [INFO]   [SKIP] llama3.2:3b / concurrent / run 0 (already complete)
+2026-06-27 04:25:46 [INFO]   [SKIP] phi3:latest / serial / run 0 (already complete)
+2026-06-27 04:25:46 [INFO]   [SKIP] phi3:latest / high_load / run 0 (already complete)
+2026-06-27 04:25:46 [INFO]   [SKIP] phi3:latest / concurrent / run 0 (already complete)
+2026-06-27 04:25:46 [INFO] 
+=== Post-processing ===
+2026-06-27 04:25:46 [INFO] ============================================================
+2026-06-27 04:25:46 [INFO] DONE
+2026-06-27 04:25:46 [INFO]   Raw CSV  : ..\results\runtime_results.csv
+2026-06-27 04:25:46 [INFO]   Summary  : ..\results\summary.csv
+2026-06-27 04:25:46 [INFO]   Metadata : ..\results\metadata.json
+2026-06-27 04:25:46 [INFO]   Total requests: 2400 (0 outliers flagged)
+2026-06-27 04:25:46 [INFO] ============================================================
+2026-06-27 18:15:10 [INFO] ============================================================
+2026-06-27 18:15:10 [INFO] SLM Runtime Benchmarking — LDWS
+2026-06-27 18:15:10 [INFO] Models : ['Qwen2.5 0.5B', 'TinyLlama 1.1B', 'Qwen2 1.5B', 'Llama3.2 3B', 'Phi-3 3.8B']
+2026-06-27 18:15:10 [INFO] Runs   : 3
+2026-06-27 18:15:10 [INFO] Prompts: ..\data\prompts.json
+2026-06-27 18:15:10 [INFO] Output : ..\results
+2026-06-27 18:15:10 [INFO] CodeCarbon available: True
+2026-06-27 18:15:10 [INFO] ============================================================
+2026-06-27 18:15:10 [INFO] 
+=== Hardware Environment ===
+2026-06-27 18:15:10 [INFO]   [Hardware] OS: Windows-11-10.0.22631-SP0
+2026-06-27 18:15:10 [INFO]   [Hardware] CPU: Intel64 Family 6 Model 186 Stepping 2, GenuineIntel (14 physical / 20 logical cores)
+2026-06-27 18:15:10 [INFO]   [Hardware] RAM: 15.65 GB
+2026-06-27 18:15:10 [INFO]   [Hardware] GPU: NVIDIA GeForce RTX 4050 Laptop GPU
+2026-06-27 18:15:10 [INFO] Loaded 50 prompts from LDWS set
+2026-06-27 18:15:10 [INFO] 
+=== Phase 0: Inference Device Detection ===
+2026-06-27 18:15:15 [INFO]   [Device] qwen2.5:0.5b         → GPU  (ΔVRAM=845 MB, ΔUtil=0%)
+2026-06-27 18:15:18 [INFO]   [Device] tinyllama:latest     → GPU  (ΔVRAM=795 MB, ΔUtil=0%)
+2026-06-27 18:15:22 [INFO]   [Device] qwen2:1.5b           → GPU  (ΔVRAM=1417 MB, ΔUtil=0%)
+2026-06-27 18:15:28 [INFO]   [Device] llama3.2:3b          → GPU  (ΔVRAM=1946 MB, ΔUtil=0%)
+2026-06-27 18:15:36 [INFO]   [Device] phi3:latest          → CPU  (ΔVRAM=-1257 MB, ΔUtil=0%)
+2026-06-27 18:15:36 [INFO]   Device map saved to device_map.json
+2026-06-27 18:15:36 [INFO] 
+=== Measuring Idle Baseline (60s) ===
+2026-06-27 18:16:36 [INFO]   Idle baseline — CPU: 2.8%
+2026-06-27 18:16:36 [INFO] 
+[1/45] Model=Qwen2.5 0.5B | Scenario=serial | Run=1
+2026-06-27 18:16:36 [INFO]   [SERIAL] Qwen2.5 0.5B — run 1/3 (50 prompts)
+2026-06-27 18:16:36 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-27 18:16:38 [INFO]   [Cold start] Qwen2.5 0.5B: 2801 ms
+2026-06-27 18:18:11 [INFO]   Saved 50 rows to CSV
+2026-06-27 18:18:11 [INFO]   Cooling down 15s ...
+2026-06-27 18:18:26 [INFO] 
+[2/45] Model=Qwen2.5 0.5B | Scenario=high_load | Run=1
+2026-06-27 18:18:26 [INFO]   [HIGH_LOAD] Qwen2.5 0.5B — run 1/3 (50 prompts)
+2026-06-27 18:18:26 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-27 18:18:27 [INFO]   [Cold start] Qwen2.5 0.5B: 1635 ms
+2026-06-27 18:19:56 [INFO]   Saved 50 rows to CSV
+2026-06-27 18:19:56 [INFO]   Cooling down 15s ...
+2026-06-27 18:20:11 [INFO] 
+[3/45] Model=Qwen2.5 0.5B | Scenario=concurrent | Run=1
+2026-06-27 18:20:11 [INFO]   [CONCURRENT] Qwen2.5 0.5B — run 1/3 (50 prompts, 4 parallel)
+2026-06-27 18:20:11 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-27 18:20:12 [INFO]   [Cold start] Qwen2.5 0.5B: 1602 ms
+2026-06-27 18:21:26 [INFO]   Saved 50 rows to CSV
+2026-06-27 18:21:26 [INFO]   Cooling down 15s ...
+2026-06-27 18:21:41 [INFO] 
+[4/45] Model=TinyLlama 1.1B | Scenario=serial | Run=1
+2026-06-27 18:21:41 [INFO]   [SERIAL] TinyLlama 1.1B — run 1/3 (50 prompts)
+2026-06-27 18:21:41 [INFO]   [Warmup] TinyLlama 1.1B — 3 rounds
+2026-06-27 18:21:45 [INFO]   [Cold start] TinyLlama 1.1B: 3929 ms
+2026-06-27 18:23:01 [INFO]   Saved 50 rows to CSV
+2026-06-27 18:23:01 [INFO]   Cooling down 15s ...
+2026-06-27 18:23:16 [INFO] 
+[5/45] Model=TinyLlama 1.1B | Scenario=high_load | Run=1
+2026-06-27 18:23:16 [INFO]   [HIGH_LOAD] TinyLlama 1.1B — run 1/3 (50 prompts)
+2026-06-27 18:23:16 [INFO]   [Warmup] TinyLlama 1.1B — 3 rounds
+2026-06-27 18:23:18 [INFO]   [Cold start] TinyLlama 1.1B: 2659 ms
+2026-06-27 18:24:30 [INFO]   Saved 50 rows to CSV
+2026-06-27 18:24:30 [INFO]   Cooling down 15s ...
+2026-06-27 18:24:45 [INFO] 
+[6/45] Model=TinyLlama 1.1B | Scenario=concurrent | Run=1
+2026-06-27 18:24:45 [INFO]   [CONCURRENT] TinyLlama 1.1B — run 1/3 (50 prompts, 4 parallel)
+2026-06-27 18:24:45 [INFO]   [Warmup] TinyLlama 1.1B — 3 rounds
+2026-06-27 18:24:47 [INFO]   [Cold start] TinyLlama 1.1B: 2592 ms
+2026-06-27 18:25:54 [INFO]   Saved 50 rows to CSV
+2026-06-27 18:25:54 [INFO]   Cooling down 15s ...
+2026-06-27 18:26:09 [INFO] 
+[7/45] Model=Qwen2 1.5B | Scenario=serial | Run=1
+2026-06-27 18:26:09 [INFO]   [SERIAL] Qwen2 1.5B — run 1/3 (50 prompts)
+2026-06-27 18:26:09 [INFO]   [Warmup] Qwen2 1.5B — 3 rounds
+2026-06-27 18:26:14 [INFO]   [Cold start] Qwen2 1.5B: 4855 ms
+2026-06-27 18:28:02 [INFO]   Saved 50 rows to CSV
+2026-06-27 18:28:02 [INFO]   Cooling down 15s ...
+2026-06-27 18:28:17 [INFO] 
+[8/45] Model=Qwen2 1.5B | Scenario=high_load | Run=1
+2026-06-27 18:28:17 [INFO]   [HIGH_LOAD] Qwen2 1.5B — run 1/3 (50 prompts)
+2026-06-27 18:28:17 [INFO]   [Warmup] Qwen2 1.5B — 3 rounds
+2026-06-27 18:28:19 [INFO]   [Cold start] Qwen2 1.5B: 1539 ms
+2026-06-27 18:30:05 [INFO]   Saved 50 rows to CSV
+2026-06-27 18:30:05 [INFO]   Cooling down 15s ...
+2026-06-27 18:30:20 [INFO] 
+[9/45] Model=Qwen2 1.5B | Scenario=concurrent | Run=1
+2026-06-27 18:30:20 [INFO]   [CONCURRENT] Qwen2 1.5B — run 1/3 (50 prompts, 4 parallel)
+2026-06-27 18:30:20 [INFO]   [Warmup] Qwen2 1.5B — 3 rounds
+2026-06-27 18:30:21 [INFO]   [Cold start] Qwen2 1.5B: 1460 ms
+2026-06-27 18:31:59 [INFO]   Saved 50 rows to CSV
+2026-06-27 18:31:59 [INFO]   Cooling down 15s ...
+2026-06-27 18:32:14 [INFO] 
+[10/45] Model=Llama3.2 3B | Scenario=serial | Run=1
+2026-06-27 18:32:14 [INFO]   [SERIAL] Llama3.2 3B — run 1/3 (50 prompts)
+2026-06-27 18:32:14 [INFO]   [Warmup] Llama3.2 3B — 3 rounds
+2026-06-27 18:32:20 [INFO]   [Cold start] Llama3.2 3B: 5463 ms
+2026-06-27 18:35:41 [INFO]   Saved 50 rows to CSV
+2026-06-27 18:35:41 [INFO]   Cooling down 15s ...
+2026-06-27 18:35:56 [INFO] 
+[11/45] Model=Llama3.2 3B | Scenario=high_load | Run=1
+2026-06-27 18:35:56 [INFO]   [HIGH_LOAD] Llama3.2 3B — run 1/3 (50 prompts)
+2026-06-27 18:35:56 [INFO]   [Warmup] Llama3.2 3B — 3 rounds
+2026-06-27 18:35:57 [INFO]   [Cold start] Llama3.2 3B: 1593 ms
+2026-06-27 18:39:21 [INFO]   Saved 50 rows to CSV
+2026-06-27 18:39:21 [INFO]   Cooling down 15s ...
+2026-06-27 18:39:36 [INFO] 
+[12/45] Model=Llama3.2 3B | Scenario=concurrent | Run=1
+2026-06-27 18:39:36 [INFO]   [CONCURRENT] Llama3.2 3B — run 1/3 (50 prompts, 4 parallel)
+2026-06-27 18:39:36 [INFO]   [Warmup] Llama3.2 3B — 3 rounds
+2026-06-27 18:39:38 [INFO]   [Cold start] Llama3.2 3B: 1579 ms
+2026-06-27 18:42:45 [INFO]   Saved 50 rows to CSV
+2026-06-27 18:42:45 [INFO]   Cooling down 15s ...
+2026-06-27 18:43:00 [INFO] 
+[13/45] Model=Phi-3 3.8B | Scenario=serial | Run=1
+2026-06-27 18:43:00 [INFO]   [SERIAL] Phi-3 3.8B — run 1/3 (50 prompts)
+2026-06-27 18:43:00 [INFO]   [Warmup] Phi-3 3.8B — 3 rounds
+2026-06-27 18:43:05 [INFO]   [Cold start] Phi-3 3.8B: 4954 ms
+2026-06-27 18:46:41 [INFO]   Saved 50 rows to CSV
+2026-06-27 18:46:41 [INFO]   Cooling down 15s ...
+2026-06-27 18:46:56 [INFO] 
+[14/45] Model=Phi-3 3.8B | Scenario=high_load | Run=1
+2026-06-27 18:46:56 [INFO]   [HIGH_LOAD] Phi-3 3.8B — run 1/3 (50 prompts)
+2026-06-27 18:46:56 [INFO]   [Warmup] Phi-3 3.8B — 3 rounds
+2026-06-27 18:46:58 [INFO]   [Cold start] Phi-3 3.8B: 1339 ms
+2026-06-27 18:50:36 [INFO]   Saved 50 rows to CSV
+2026-06-27 18:50:36 [INFO]   Cooling down 15s ...
+2026-06-27 18:50:51 [INFO] 
+[15/45] Model=Phi-3 3.8B | Scenario=concurrent | Run=1
+2026-06-27 18:50:51 [INFO]   [CONCURRENT] Phi-3 3.8B — run 1/3 (50 prompts, 4 parallel)
+2026-06-27 18:50:51 [INFO]   [Warmup] Phi-3 3.8B — 3 rounds
+2026-06-27 18:50:52 [INFO]   [Cold start] Phi-3 3.8B: 1338 ms
+2026-06-27 18:54:34 [INFO]   Saved 50 rows to CSV
+2026-06-27 18:54:34 [INFO]   Cooling down 15s ...
+2026-06-27 18:54:49 [INFO] 
+[16/45] Model=Qwen2.5 0.5B | Scenario=serial | Run=2
+2026-06-27 18:54:49 [INFO]   [SERIAL] Qwen2.5 0.5B — run 2/3 (50 prompts)
+2026-06-27 18:54:49 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-27 18:54:53 [INFO]   [Cold start] Qwen2.5 0.5B: 3641 ms
+2026-06-27 18:56:13 [INFO]   Saved 50 rows to CSV
+2026-06-27 18:56:13 [INFO]   Cooling down 15s ...
+2026-06-27 18:56:28 [INFO] 
+[17/45] Model=Qwen2.5 0.5B | Scenario=high_load | Run=2
+2026-06-27 18:56:28 [INFO]   [HIGH_LOAD] Qwen2.5 0.5B — run 2/3 (50 prompts)
+2026-06-27 18:56:28 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-27 18:56:29 [INFO]   [Cold start] Qwen2.5 0.5B: 1393 ms
+2026-06-27 18:57:47 [INFO]   Saved 50 rows to CSV
+2026-06-27 18:57:47 [INFO]   Cooling down 15s ...
+2026-06-27 18:58:02 [INFO] 
+[18/45] Model=Qwen2.5 0.5B | Scenario=concurrent | Run=2
+2026-06-27 18:58:02 [INFO]   [CONCURRENT] Qwen2.5 0.5B — run 2/3 (50 prompts, 4 parallel)
+2026-06-27 18:58:02 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-27 18:58:03 [INFO]   [Cold start] Qwen2.5 0.5B: 1402 ms
+2026-06-27 18:59:12 [INFO]   Saved 50 rows to CSV
+2026-06-27 18:59:12 [INFO]   Cooling down 15s ...
+2026-06-27 18:59:27 [INFO] 
+[19/45] Model=TinyLlama 1.1B | Scenario=serial | Run=2
+2026-06-27 18:59:27 [INFO]   [SERIAL] TinyLlama 1.1B — run 2/3 (50 prompts)
+2026-06-27 18:59:27 [INFO]   [Warmup] TinyLlama 1.1B — 3 rounds
+2026-06-27 18:59:33 [INFO]   [Cold start] TinyLlama 1.1B: 5124 ms
+2026-06-27 19:00:46 [INFO]   Saved 50 rows to CSV
+2026-06-27 19:00:46 [INFO]   Cooling down 15s ...
+2026-06-27 19:01:01 [INFO] 
+[20/45] Model=TinyLlama 1.1B | Scenario=high_load | Run=2
+2026-06-27 19:01:01 [INFO]   [HIGH_LOAD] TinyLlama 1.1B — run 2/3 (50 prompts)
+2026-06-27 19:01:01 [INFO]   [Warmup] TinyLlama 1.1B — 3 rounds
+2026-06-27 19:01:03 [INFO]   [Cold start] TinyLlama 1.1B: 2570 ms
+2026-06-27 19:02:14 [INFO]   Saved 50 rows to CSV
+2026-06-27 19:02:14 [INFO]   Cooling down 15s ...
+2026-06-27 19:02:29 [INFO] 
+[21/45] Model=TinyLlama 1.1B | Scenario=concurrent | Run=2
+2026-06-27 19:02:29 [INFO]   [CONCURRENT] TinyLlama 1.1B — run 2/3 (50 prompts, 4 parallel)
+2026-06-27 19:02:29 [INFO]   [Warmup] TinyLlama 1.1B — 3 rounds
+2026-06-27 19:02:32 [INFO]   [Cold start] TinyLlama 1.1B: 2563 ms
+2026-06-27 19:03:40 [INFO]   Saved 50 rows to CSV
+2026-06-27 19:03:40 [INFO]   Cooling down 15s ...
+2026-06-27 19:03:55 [INFO] 
+[22/45] Model=Qwen2 1.5B | Scenario=serial | Run=2
+2026-06-27 19:03:55 [INFO]   [SERIAL] Qwen2 1.5B — run 2/3 (50 prompts)
+2026-06-27 19:03:55 [INFO]   [Warmup] Qwen2 1.5B — 3 rounds
+2026-06-27 19:03:58 [INFO]   [Cold start] Qwen2 1.5B: 3421 ms
+2026-06-27 19:05:46 [INFO]   Saved 50 rows to CSV
+2026-06-27 19:05:46 [INFO]   Cooling down 15s ...
+2026-06-27 19:06:01 [INFO] 
+[23/45] Model=Qwen2 1.5B | Scenario=high_load | Run=2
+2026-06-27 19:06:01 [INFO]   [HIGH_LOAD] Qwen2 1.5B — run 2/3 (50 prompts)
+2026-06-27 19:06:01 [INFO]   [Warmup] Qwen2 1.5B — 3 rounds
+2026-06-27 19:06:02 [INFO]   [Cold start] Qwen2 1.5B: 1493 ms
+2026-06-27 19:07:35 [INFO]   Saved 50 rows to CSV
+2026-06-27 19:07:35 [INFO]   Cooling down 15s ...
+2026-06-27 19:07:50 [INFO] 
+[24/45] Model=Qwen2 1.5B | Scenario=concurrent | Run=2
+2026-06-27 19:07:50 [INFO]   [CONCURRENT] Qwen2 1.5B — run 2/3 (50 prompts, 4 parallel)
+2026-06-27 19:07:50 [INFO]   [Warmup] Qwen2 1.5B — 3 rounds
+2026-06-27 19:07:51 [INFO]   [Cold start] Qwen2 1.5B: 789 ms
+2026-06-27 19:09:08 [INFO]   Saved 50 rows to CSV
+2026-06-27 19:09:08 [INFO]   Cooling down 15s ...
+2026-06-27 19:09:23 [INFO] 
+[25/45] Model=Llama3.2 3B | Scenario=serial | Run=2
+2026-06-27 19:09:23 [INFO]   [SERIAL] Llama3.2 3B — run 2/3 (50 prompts)
+2026-06-27 19:09:23 [INFO]   [Warmup] Llama3.2 3B — 3 rounds
+2026-06-27 19:09:27 [INFO]   [Cold start] Llama3.2 3B: 4543 ms
+2026-06-27 19:12:12 [INFO]   Saved 50 rows to CSV
+2026-06-27 19:12:12 [INFO]   Cooling down 15s ...
+2026-06-27 19:12:27 [INFO] 
+[26/45] Model=Llama3.2 3B | Scenario=high_load | Run=2
+2026-06-27 19:12:27 [INFO]   [HIGH_LOAD] Llama3.2 3B — run 2/3 (50 prompts)
+2026-06-27 19:12:27 [INFO]   [Warmup] Llama3.2 3B — 3 rounds
+2026-06-27 19:12:27 [INFO]   [Cold start] Llama3.2 3B: 929 ms
+2026-06-27 19:15:08 [INFO]   Saved 50 rows to CSV
+2026-06-27 19:15:08 [INFO]   Cooling down 15s ...
+2026-06-27 19:15:23 [INFO] 
+[27/45] Model=Llama3.2 3B | Scenario=concurrent | Run=2
+2026-06-27 19:15:23 [INFO]   [CONCURRENT] Llama3.2 3B — run 2/3 (50 prompts, 4 parallel)
+2026-06-27 19:15:23 [INFO]   [Warmup] Llama3.2 3B — 3 rounds
+2026-06-27 19:15:24 [INFO]   [Cold start] Llama3.2 3B: 1065 ms
+2026-06-27 19:17:45 [INFO]   Saved 50 rows to CSV
+2026-06-27 19:17:45 [INFO]   Cooling down 15s ...
+2026-06-27 19:18:00 [INFO] 
+[28/45] Model=Phi-3 3.8B | Scenario=serial | Run=2
+2026-06-27 19:18:00 [INFO]   [SERIAL] Phi-3 3.8B — run 2/3 (50 prompts)
+2026-06-27 19:18:00 [INFO]   [Warmup] Phi-3 3.8B — 3 rounds
+2026-06-27 19:18:03 [INFO]   [Cold start] Phi-3 3.8B: 3198 ms
+2026-06-27 19:20:56 [INFO]   Saved 50 rows to CSV
+2026-06-27 19:20:56 [INFO]   Cooling down 15s ...
+2026-06-27 19:21:11 [INFO] 
+[29/45] Model=Phi-3 3.8B | Scenario=high_load | Run=2
+2026-06-27 19:21:11 [INFO]   [HIGH_LOAD] Phi-3 3.8B — run 2/3 (50 prompts)
+2026-06-27 19:21:11 [INFO]   [Warmup] Phi-3 3.8B — 3 rounds
+2026-06-27 19:21:12 [INFO]   [Cold start] Phi-3 3.8B: 642 ms
+2026-06-27 19:23:59 [INFO]   Saved 50 rows to CSV
+2026-06-27 19:23:59 [INFO]   Cooling down 15s ...
+2026-06-27 19:24:14 [INFO] 
+[30/45] Model=Phi-3 3.8B | Scenario=concurrent | Run=2
+2026-06-27 19:24:14 [INFO]   [CONCURRENT] Phi-3 3.8B — run 2/3 (50 prompts, 4 parallel)
+2026-06-27 19:24:14 [INFO]   [Warmup] Phi-3 3.8B — 3 rounds
+2026-06-27 19:24:14 [INFO]   [Cold start] Phi-3 3.8B: 482 ms
+2026-06-27 19:26:59 [INFO]   Saved 50 rows to CSV
+2026-06-27 19:26:59 [INFO]   Cooling down 15s ...
+2026-06-27 19:27:14 [INFO] 
+[31/45] Model=Qwen2.5 0.5B | Scenario=serial | Run=3
+2026-06-27 19:27:14 [INFO]   [SERIAL] Qwen2.5 0.5B — run 3/3 (50 prompts)
+2026-06-27 19:27:14 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-27 19:27:17 [INFO]   [Cold start] Qwen2.5 0.5B: 2659 ms
+2026-06-27 19:28:32 [INFO]   Saved 50 rows to CSV
+2026-06-27 19:28:32 [INFO]   Cooling down 15s ...
+2026-06-27 19:28:47 [INFO] 
+[32/45] Model=Qwen2.5 0.5B | Scenario=high_load | Run=3
+2026-06-27 19:28:47 [INFO]   [HIGH_LOAD] Qwen2.5 0.5B — run 3/3 (50 prompts)
+2026-06-27 19:28:47 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-27 19:28:47 [INFO]   [Cold start] Qwen2.5 0.5B: 732 ms
+2026-06-27 19:29:57 [INFO]   Saved 50 rows to CSV
+2026-06-27 19:29:57 [INFO]   Cooling down 15s ...
+2026-06-27 19:30:12 [INFO] 
+[33/45] Model=Qwen2.5 0.5B | Scenario=concurrent | Run=3
+2026-06-27 19:30:12 [INFO]   [CONCURRENT] Qwen2.5 0.5B — run 3/3 (50 prompts, 4 parallel)
+2026-06-27 19:30:12 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-27 19:30:13 [INFO]   [Cold start] Qwen2.5 0.5B: 744 ms
+2026-06-27 19:31:08 [INFO]   Saved 50 rows to CSV
+2026-06-27 19:31:08 [INFO]   Cooling down 15s ...
+2026-06-27 19:31:23 [INFO] 
+[34/45] Model=TinyLlama 1.1B | Scenario=serial | Run=3
+2026-06-27 19:31:23 [INFO]   [SERIAL] TinyLlama 1.1B — run 3/3 (50 prompts)
+2026-06-27 19:31:23 [INFO]   [Warmup] TinyLlama 1.1B — 3 rounds
+2026-06-27 19:31:27 [INFO]   [Cold start] TinyLlama 1.1B: 3658 ms
+2026-06-27 19:32:31 [INFO]   Saved 50 rows to CSV
+2026-06-27 19:32:31 [INFO]   Cooling down 15s ...
+2026-06-27 19:32:46 [INFO] 
+[35/45] Model=TinyLlama 1.1B | Scenario=high_load | Run=3
+2026-06-27 19:32:46 [INFO]   [HIGH_LOAD] TinyLlama 1.1B — run 3/3 (50 prompts)
+2026-06-27 19:32:46 [INFO]   [Warmup] TinyLlama 1.1B — 3 rounds
+2026-06-27 19:32:47 [INFO]   [Cold start] TinyLlama 1.1B: 1605 ms
+2026-06-27 19:33:47 [INFO]   Saved 50 rows to CSV
+2026-06-27 19:33:47 [INFO]   Cooling down 15s ...
+2026-06-27 19:34:02 [INFO] 
+[36/45] Model=TinyLlama 1.1B | Scenario=concurrent | Run=3
+2026-06-27 19:34:02 [INFO]   [CONCURRENT] TinyLlama 1.1B — run 3/3 (50 prompts, 4 parallel)
+2026-06-27 19:34:02 [INFO]   [Warmup] TinyLlama 1.1B — 3 rounds
+2026-06-27 19:34:03 [INFO]   [Cold start] TinyLlama 1.1B: 1604 ms
+2026-06-27 19:34:59 [INFO]   Saved 50 rows to CSV
+2026-06-27 19:34:59 [INFO]   Cooling down 15s ...
+2026-06-27 19:35:14 [INFO] 
+[37/45] Model=Qwen2 1.5B | Scenario=serial | Run=3
+2026-06-27 19:35:14 [INFO]   [SERIAL] Qwen2 1.5B — run 3/3 (50 prompts)
+2026-06-27 19:35:14 [INFO]   [Warmup] Qwen2 1.5B — 3 rounds
+2026-06-27 19:35:17 [INFO]   [Cold start] Qwen2 1.5B: 2977 ms
+2026-06-27 19:36:53 [INFO]   Saved 50 rows to CSV
+2026-06-27 19:36:53 [INFO]   Cooling down 15s ...
+2026-06-27 19:37:08 [INFO] 
+[38/45] Model=Qwen2 1.5B | Scenario=high_load | Run=3
+2026-06-27 19:37:08 [INFO]   [HIGH_LOAD] Qwen2 1.5B — run 3/3 (50 prompts)
+2026-06-27 19:37:08 [INFO]   [Warmup] Qwen2 1.5B — 3 rounds
+2026-06-27 19:37:09 [INFO]   [Cold start] Qwen2 1.5B: 812 ms
+2026-06-27 19:38:40 [INFO]   Saved 50 rows to CSV
+2026-06-27 19:38:40 [INFO]   Cooling down 15s ...
+2026-06-27 19:38:55 [INFO] 
+[39/45] Model=Qwen2 1.5B | Scenario=concurrent | Run=3
+2026-06-27 19:38:55 [INFO]   [CONCURRENT] Qwen2 1.5B — run 3/3 (50 prompts, 4 parallel)
+2026-06-27 19:38:55 [INFO]   [Warmup] Qwen2 1.5B — 3 rounds
+2026-06-27 19:38:56 [INFO]   [Cold start] Qwen2 1.5B: 717 ms
+2026-06-27 19:40:14 [INFO]   Saved 50 rows to CSV
+2026-06-27 19:40:14 [INFO]   Cooling down 15s ...
+2026-06-27 19:40:29 [INFO] 
+[40/45] Model=Llama3.2 3B | Scenario=serial | Run=3
+2026-06-27 19:40:29 [INFO]   [SERIAL] Llama3.2 3B — run 3/3 (50 prompts)
+2026-06-27 19:40:29 [INFO]   [Warmup] Llama3.2 3B — 3 rounds
+2026-06-27 19:40:32 [INFO]   [Cold start] Llama3.2 3B: 3671 ms
+2026-06-27 19:43:16 [INFO]   Saved 50 rows to CSV
+2026-06-27 19:43:16 [INFO]   Cooling down 15s ...
+2026-06-27 19:43:31 [INFO] 
+[41/45] Model=Llama3.2 3B | Scenario=high_load | Run=3
+2026-06-27 19:43:31 [INFO]   [HIGH_LOAD] Llama3.2 3B — run 3/3 (50 prompts)
+2026-06-27 19:43:31 [INFO]   [Warmup] Llama3.2 3B — 3 rounds
+2026-06-27 19:43:32 [INFO]   [Cold start] Llama3.2 3B: 923 ms
+2026-06-27 19:46:10 [INFO]   Saved 50 rows to CSV
+2026-06-27 19:46:10 [INFO]   Cooling down 15s ...
+2026-06-27 19:46:25 [INFO] 
+[42/45] Model=Llama3.2 3B | Scenario=concurrent | Run=3
+2026-06-27 19:46:25 [INFO]   [CONCURRENT] Llama3.2 3B — run 3/3 (50 prompts, 4 parallel)
+2026-06-27 19:46:25 [INFO]   [Warmup] Llama3.2 3B — 3 rounds
+2026-06-27 19:46:26 [INFO]   [Cold start] Llama3.2 3B: 1005 ms
+2026-06-27 19:48:47 [INFO]   Saved 50 rows to CSV
+2026-06-27 19:48:47 [INFO]   Cooling down 15s ...
+2026-06-27 19:49:02 [INFO] 
+[43/45] Model=Phi-3 3.8B | Scenario=serial | Run=3
+2026-06-27 19:49:02 [INFO]   [SERIAL] Phi-3 3.8B — run 3/3 (50 prompts)
+2026-06-27 19:49:02 [INFO]   [Warmup] Phi-3 3.8B — 3 rounds
+2026-06-27 19:49:05 [INFO]   [Cold start] Phi-3 3.8B: 2540 ms
+2026-06-27 19:51:57 [INFO]   Saved 50 rows to CSV
+2026-06-27 19:51:57 [INFO]   Cooling down 15s ...
+2026-06-27 19:52:12 [INFO] 
+[44/45] Model=Phi-3 3.8B | Scenario=high_load | Run=3
+2026-06-27 19:52:12 [INFO]   [HIGH_LOAD] Phi-3 3.8B — run 3/3 (50 prompts)
+2026-06-27 19:52:12 [INFO]   [Warmup] Phi-3 3.8B — 3 rounds
+2026-06-27 19:52:13 [INFO]   [Cold start] Phi-3 3.8B: 590 ms
+2026-06-27 19:55:00 [INFO]   Saved 50 rows to CSV
+2026-06-27 19:55:00 [INFO]   Cooling down 15s ...
+2026-06-27 19:55:15 [INFO] 
+[45/45] Model=Phi-3 3.8B | Scenario=concurrent | Run=3
+2026-06-27 19:55:15 [INFO]   [CONCURRENT] Phi-3 3.8B — run 3/3 (50 prompts, 4 parallel)
+2026-06-27 19:55:15 [INFO]   [Warmup] Phi-3 3.8B — 3 rounds
+2026-06-27 19:55:16 [INFO]   [Cold start] Phi-3 3.8B: 601 ms
+2026-06-27 19:58:02 [INFO]   Saved 50 rows to CSV
+2026-06-27 19:58:02 [INFO]   Cooling down 15s ...
+2026-06-27 19:58:17 [INFO] 
+=== Post-processing ===
+2026-06-27 19:58:18 [INFO] ============================================================
+2026-06-27 19:58:18 [INFO] DONE
+2026-06-27 19:58:18 [INFO]   Raw CSV  : ..\results\runtime_results.csv
+2026-06-27 19:58:18 [INFO]   Summary  : ..\results\summary.csv
+2026-06-27 19:58:18 [INFO]   Metadata : ..\results\metadata.json
+2026-06-27 19:58:18 [INFO]   Total requests: 2250 (1 outliers flagged)
+2026-06-27 19:58:18 [INFO] ============================================================
+2026-06-30 06:46:13 [INFO] ============================================================
+2026-06-30 06:46:13 [INFO] SLM Runtime Benchmarking — LDWS
+2026-06-30 06:46:13 [INFO] Models : ['Qwen2.5 0.5B', 'TinyLlama 1.1B', 'Qwen2 1.5B', 'Llama3.2 3B', 'Phi-3 3.8B']
+2026-06-30 06:46:13 [INFO] Runs   : 3
+2026-06-30 06:46:13 [INFO] Prompts: ..\data\prompts.json
+2026-06-30 06:46:13 [INFO] Output : ..\results
+2026-06-30 06:46:13 [INFO] CodeCarbon available: True
+2026-06-30 06:46:13 [INFO] ============================================================
+2026-06-30 06:46:13 [INFO] 
+=== Hardware Environment ===
+2026-06-30 06:46:13 [INFO]   [Hardware] OS: Windows-11-10.0.22631-SP0
+2026-06-30 06:46:13 [INFO]   [Hardware] CPU: Intel64 Family 6 Model 186 Stepping 2, GenuineIntel (14 physical / 20 logical cores)
+2026-06-30 06:46:13 [INFO]   [Hardware] RAM: 15.65 GB
+2026-06-30 06:46:13 [INFO]   [Hardware] GPU: NVIDIA GeForce RTX 4050 Laptop GPU
+2026-06-30 06:46:13 [INFO] Loaded 50 prompts from LDWS set
+2026-06-30 06:46:13 [INFO] 
+=== Phase 0: Inference Device Detection ===
+2026-06-30 06:46:17 [INFO]   [Device] qwen2.5:0.5b         → GPU  (ΔVRAM=845 MB, ΔUtil=0%)
+2026-06-30 06:46:20 [INFO]   [Device] tinyllama:latest     → GPU  (ΔVRAM=795 MB, ΔUtil=0%)
+2026-06-30 06:46:24 [INFO]   [Device] qwen2:1.5b           → GPU  (ΔVRAM=1417 MB, ΔUtil=0%)
+2026-06-30 06:46:31 [INFO]   [Device] llama3.2:3b          → GPU  (ΔVRAM=1946 MB, ΔUtil=0%)
+2026-06-30 06:46:37 [INFO]   [Device] phi3:latest          → CPU  (ΔVRAM=-1257 MB, ΔUtil=0%)
+2026-06-30 06:46:37 [INFO]   Device map saved to device_map.json
+2026-06-30 06:46:37 [INFO] 
+=== Measuring Idle Baseline (60s) ===
+2026-06-30 06:47:37 [INFO]   Idle baseline — CPU: 1.3%
+2026-06-30 06:47:37 [INFO] 
+[1/45] Model=Qwen2.5 0.5B | Scenario=serial | Run=1
+2026-06-30 06:47:37 [INFO]   [SERIAL] Qwen2.5 0.5B — run 1/3 (50 prompts)
+2026-06-30 06:47:37 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-30 06:47:40 [INFO]   [Cold start] Qwen2.5 0.5B: 2752 ms
+2026-06-30 06:48:57 [INFO]   Saved 50 rows to CSV
+2026-06-30 06:48:57 [INFO]   Cooling down 15s ...
+2026-06-30 06:49:12 [INFO] 
+[2/45] Model=Qwen2.5 0.5B | Scenario=high_load | Run=1
+2026-06-30 06:49:12 [INFO]   [HIGH_LOAD] Qwen2.5 0.5B — run 1/3 (50 prompts)
+2026-06-30 06:49:12 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-30 06:49:13 [INFO]   [Cold start] Qwen2.5 0.5B: 673 ms
+2026-06-30 06:50:22 [INFO]   Saved 50 rows to CSV
+2026-06-30 06:50:22 [INFO]   Cooling down 15s ...
+2026-06-30 06:50:37 [INFO] 
+[3/45] Model=Qwen2.5 0.5B | Scenario=concurrent | Run=1
+2026-06-30 06:50:37 [INFO]   [CONCURRENT] Qwen2.5 0.5B — run 1/3 (50 prompts, 4 parallel)
+2026-06-30 06:50:37 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-30 06:50:38 [INFO]   [Cold start] Qwen2.5 0.5B: 738 ms
+2026-06-30 06:51:32 [INFO]   Saved 50 rows to CSV
+2026-06-30 06:51:32 [INFO]   Cooling down 15s ...
+2026-06-30 06:51:47 [INFO] 
+[4/45] Model=TinyLlama 1.1B | Scenario=serial | Run=1
+2026-06-30 06:51:47 [INFO]   [SERIAL] TinyLlama 1.1B — run 1/3 (50 prompts)
+2026-06-30 06:51:47 [INFO]   [Warmup] TinyLlama 1.1B — 3 rounds
+2026-06-30 06:51:50 [INFO]   [Cold start] TinyLlama 1.1B: 2605 ms
+2026-06-30 06:52:54 [INFO]   Saved 50 rows to CSV
+2026-06-30 06:52:54 [INFO]   Cooling down 15s ...
+2026-06-30 06:53:09 [INFO] 
+[5/45] Model=TinyLlama 1.1B | Scenario=high_load | Run=1
+2026-06-30 06:53:09 [INFO]   [HIGH_LOAD] TinyLlama 1.1B — run 1/3 (50 prompts)
+2026-06-30 06:53:09 [INFO]   [Warmup] TinyLlama 1.1B — 3 rounds
+2026-06-30 06:53:11 [INFO]   [Cold start] TinyLlama 1.1B: 1616 ms
+2026-06-30 06:54:09 [INFO]   Saved 50 rows to CSV
+2026-06-30 06:54:09 [INFO]   Cooling down 15s ...
+2026-06-30 06:54:24 [INFO] 
+[6/45] Model=TinyLlama 1.1B | Scenario=concurrent | Run=1
+2026-06-30 06:54:24 [INFO]   [CONCURRENT] TinyLlama 1.1B — run 1/3 (50 prompts, 4 parallel)
+2026-06-30 06:54:24 [INFO]   [Warmup] TinyLlama 1.1B — 3 rounds
+2026-06-30 06:54:26 [INFO]   [Cold start] TinyLlama 1.1B: 1616 ms
+2026-06-30 06:55:20 [INFO]   Saved 50 rows to CSV
+2026-06-30 06:55:20 [INFO]   Cooling down 15s ...
+2026-06-30 06:55:35 [INFO] 
+[7/45] Model=Qwen2 1.5B | Scenario=serial | Run=1
+2026-06-30 06:55:35 [INFO]   [SERIAL] Qwen2 1.5B — run 1/3 (50 prompts)
+2026-06-30 06:55:35 [INFO]   [Warmup] Qwen2 1.5B — 3 rounds
+2026-06-30 06:55:38 [INFO]   [Cold start] Qwen2 1.5B: 2944 ms
+2026-06-30 06:57:15 [INFO]   Saved 50 rows to CSV
+2026-06-30 06:57:15 [INFO]   Cooling down 15s ...
+2026-06-30 06:57:30 [INFO] 
+[8/45] Model=Qwen2 1.5B | Scenario=high_load | Run=1
+2026-06-30 06:57:30 [INFO]   [HIGH_LOAD] Qwen2 1.5B — run 1/3 (50 prompts)
+2026-06-30 06:57:30 [INFO]   [Warmup] Qwen2 1.5B — 3 rounds
+2026-06-30 06:57:30 [INFO]   [Cold start] Qwen2 1.5B: 740 ms
+2026-06-30 06:59:01 [INFO]   Saved 50 rows to CSV
+2026-06-30 06:59:01 [INFO]   Cooling down 15s ...
+2026-06-30 06:59:16 [INFO] 
+[9/45] Model=Qwen2 1.5B | Scenario=concurrent | Run=1
+2026-06-30 06:59:16 [INFO]   [CONCURRENT] Qwen2 1.5B — run 1/3 (50 prompts, 4 parallel)
+2026-06-30 06:59:16 [INFO]   [Warmup] Qwen2 1.5B — 3 rounds
+2026-06-30 06:59:17 [INFO]   [Cold start] Qwen2 1.5B: 719 ms
+2026-06-30 07:00:33 [INFO]   Saved 50 rows to CSV
+2026-06-30 07:00:33 [INFO]   Cooling down 15s ...
+2026-06-30 07:00:48 [INFO] 
+[10/45] Model=Llama3.2 3B | Scenario=serial | Run=1
+2026-06-30 07:00:48 [INFO]   [SERIAL] Llama3.2 3B — run 1/3 (50 prompts)
+2026-06-30 07:00:48 [INFO]   [Warmup] Llama3.2 3B — 3 rounds
+2026-06-30 07:00:52 [INFO]   [Cold start] Llama3.2 3B: 3981 ms
+2026-06-30 07:03:35 [INFO]   Saved 50 rows to CSV
+2026-06-30 07:03:35 [INFO]   Cooling down 15s ...
+2026-06-30 07:03:50 [INFO] 
+[11/45] Model=Llama3.2 3B | Scenario=high_load | Run=1
+2026-06-30 07:03:50 [INFO]   [HIGH_LOAD] Llama3.2 3B — run 1/3 (50 prompts)
+2026-06-30 07:03:50 [INFO]   [Warmup] Llama3.2 3B — 3 rounds
+2026-06-30 07:03:51 [INFO]   [Cold start] Llama3.2 3B: 978 ms
+2026-06-30 07:06:29 [INFO]   Saved 50 rows to CSV
+2026-06-30 07:06:29 [INFO]   Cooling down 15s ...
+2026-06-30 07:06:44 [INFO] 
+[12/45] Model=Llama3.2 3B | Scenario=concurrent | Run=1
+2026-06-30 07:06:44 [INFO]   [CONCURRENT] Llama3.2 3B — run 1/3 (50 prompts, 4 parallel)
+2026-06-30 07:06:44 [INFO]   [Warmup] Llama3.2 3B — 3 rounds
+2026-06-30 07:06:44 [INFO]   [Cold start] Llama3.2 3B: 865 ms
+2026-06-30 07:09:05 [INFO]   Saved 50 rows to CSV
+2026-06-30 07:09:05 [INFO]   Cooling down 15s ...
+2026-06-30 07:09:20 [INFO] 
+[13/45] Model=Phi-3 3.8B | Scenario=serial | Run=1
+2026-06-30 07:09:20 [INFO]   [SERIAL] Phi-3 3.8B — run 1/3 (50 prompts)
+2026-06-30 07:09:20 [INFO]   [Warmup] Phi-3 3.8B — 3 rounds
+2026-06-30 07:09:23 [INFO]   [Cold start] Phi-3 3.8B: 3086 ms
+2026-06-30 07:12:15 [INFO]   Saved 50 rows to CSV
+2026-06-30 07:12:15 [INFO]   Cooling down 15s ...
+2026-06-30 07:12:30 [INFO] 
+[14/45] Model=Phi-3 3.8B | Scenario=high_load | Run=1
+2026-06-30 07:12:30 [INFO]   [HIGH_LOAD] Phi-3 3.8B — run 1/3 (50 prompts)
+2026-06-30 07:12:30 [INFO]   [Warmup] Phi-3 3.8B — 3 rounds
+2026-06-30 07:12:30 [INFO]   [Cold start] Phi-3 3.8B: 615 ms
+2026-06-30 07:15:17 [INFO]   Saved 50 rows to CSV
+2026-06-30 07:15:17 [INFO]   Cooling down 15s ...
+2026-06-30 07:15:32 [INFO] 
+[15/45] Model=Phi-3 3.8B | Scenario=concurrent | Run=1
+2026-06-30 07:15:32 [INFO]   [CONCURRENT] Phi-3 3.8B — run 1/3 (50 prompts, 4 parallel)
+2026-06-30 07:15:32 [INFO]   [Warmup] Phi-3 3.8B — 3 rounds
+2026-06-30 07:15:33 [INFO]   [Cold start] Phi-3 3.8B: 574 ms
+2026-06-30 07:18:18 [INFO]   Saved 50 rows to CSV
+2026-06-30 07:18:18 [INFO]   Cooling down 15s ...
+2026-06-30 07:18:33 [INFO] 
+[16/45] Model=Qwen2.5 0.5B | Scenario=serial | Run=2
+2026-06-30 07:18:33 [INFO]   [SERIAL] Qwen2.5 0.5B — run 2/3 (50 prompts)
+2026-06-30 07:18:33 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-30 07:18:35 [INFO]   [Cold start] Qwen2.5 0.5B: 2582 ms
+2026-06-30 07:19:50 [INFO]   Saved 50 rows to CSV
+2026-06-30 07:19:50 [INFO]   Cooling down 15s ...
+2026-06-30 07:20:05 [INFO] 
+[17/45] Model=Qwen2.5 0.5B | Scenario=high_load | Run=2
+2026-06-30 07:20:05 [INFO]   [HIGH_LOAD] Qwen2.5 0.5B — run 2/3 (50 prompts)
+2026-06-30 07:20:05 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-30 07:20:06 [INFO]   [Cold start] Qwen2.5 0.5B: 780 ms
+2026-06-30 07:21:16 [INFO]   Saved 50 rows to CSV
+2026-06-30 07:21:16 [INFO]   Cooling down 15s ...
+2026-06-30 07:21:31 [INFO] 
+[18/45] Model=Qwen2.5 0.5B | Scenario=concurrent | Run=2
+2026-06-30 07:21:31 [INFO]   [CONCURRENT] Qwen2.5 0.5B — run 2/3 (50 prompts, 4 parallel)
+2026-06-30 07:21:31 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-30 07:21:31 [INFO]   [Cold start] Qwen2.5 0.5B: 646 ms
+2026-06-30 07:22:26 [INFO]   Saved 50 rows to CSV
+2026-06-30 07:22:26 [INFO]   Cooling down 15s ...
+2026-06-30 07:22:41 [INFO] 
+[19/45] Model=TinyLlama 1.1B | Scenario=serial | Run=2
+2026-06-30 07:22:41 [INFO]   [SERIAL] TinyLlama 1.1B — run 2/3 (50 prompts)
+2026-06-30 07:22:41 [INFO]   [Warmup] TinyLlama 1.1B — 3 rounds
+2026-06-30 07:22:45 [INFO]   [Cold start] TinyLlama 1.1B: 4111 ms
+2026-06-30 07:23:49 [INFO]   Saved 50 rows to CSV
+2026-06-30 07:23:49 [INFO]   Cooling down 15s ...
+2026-06-30 07:24:04 [INFO] 
+[20/45] Model=TinyLlama 1.1B | Scenario=high_load | Run=2
+2026-06-30 07:24:04 [INFO]   [HIGH_LOAD] TinyLlama 1.1B — run 2/3 (50 prompts)
+2026-06-30 07:24:04 [INFO]   [Warmup] TinyLlama 1.1B — 3 rounds
+2026-06-30 07:24:06 [INFO]   [Cold start] TinyLlama 1.1B: 1616 ms
+2026-06-30 07:25:04 [INFO]   Saved 50 rows to CSV
+2026-06-30 07:25:04 [INFO]   Cooling down 15s ...
+2026-06-30 07:25:19 [INFO] 
+[21/45] Model=TinyLlama 1.1B | Scenario=concurrent | Run=2
+2026-06-30 07:25:19 [INFO]   [CONCURRENT] TinyLlama 1.1B — run 2/3 (50 prompts, 4 parallel)
+2026-06-30 07:25:19 [INFO]   [Warmup] TinyLlama 1.1B — 3 rounds
+2026-06-30 07:25:21 [INFO]   [Cold start] TinyLlama 1.1B: 1618 ms
+2026-06-30 07:26:15 [INFO]   Saved 50 rows to CSV
+2026-06-30 07:26:15 [INFO]   Cooling down 15s ...
+2026-06-30 07:26:30 [INFO] 
+[22/45] Model=Qwen2 1.5B | Scenario=serial | Run=2
+2026-06-30 07:26:30 [INFO]   [SERIAL] Qwen2 1.5B — run 2/3 (50 prompts)
+2026-06-30 07:26:30 [INFO]   [Warmup] Qwen2 1.5B — 3 rounds
+2026-06-30 07:26:33 [INFO]   [Cold start] Qwen2 1.5B: 2659 ms
+2026-06-30 07:28:10 [INFO]   Saved 50 rows to CSV
+2026-06-30 07:28:10 [INFO]   Cooling down 15s ...
+2026-06-30 07:28:25 [INFO] 
+[23/45] Model=Qwen2 1.5B | Scenario=high_load | Run=2
+2026-06-30 07:28:25 [INFO]   [HIGH_LOAD] Qwen2 1.5B — run 2/3 (50 prompts)
+2026-06-30 07:28:25 [INFO]   [Warmup] Qwen2 1.5B — 3 rounds
+2026-06-30 07:28:26 [INFO]   [Cold start] Qwen2 1.5B: 781 ms
+2026-06-30 07:29:57 [INFO]   Saved 50 rows to CSV
+2026-06-30 07:29:57 [INFO]   Cooling down 15s ...
+2026-06-30 07:30:12 [INFO] 
+[24/45] Model=Qwen2 1.5B | Scenario=concurrent | Run=2
+2026-06-30 07:30:12 [INFO]   [CONCURRENT] Qwen2 1.5B — run 2/3 (50 prompts, 4 parallel)
+2026-06-30 07:30:12 [INFO]   [Warmup] Qwen2 1.5B — 3 rounds
+2026-06-30 07:30:13 [INFO]   [Cold start] Qwen2 1.5B: 748 ms
+2026-06-30 07:31:29 [INFO]   Saved 50 rows to CSV
+2026-06-30 07:31:29 [INFO]   Cooling down 15s ...
+2026-06-30 07:31:44 [INFO] 
+[25/45] Model=Llama3.2 3B | Scenario=serial | Run=2
+2026-06-30 07:31:44 [INFO]   [SERIAL] Llama3.2 3B — run 2/3 (50 prompts)
+2026-06-30 07:31:44 [INFO]   [Warmup] Llama3.2 3B — 3 rounds
+2026-06-30 07:31:47 [INFO]   [Cold start] Llama3.2 3B: 3748 ms
+2026-06-30 07:34:30 [INFO]   Saved 50 rows to CSV
+2026-06-30 07:34:30 [INFO]   Cooling down 15s ...
+2026-06-30 07:34:45 [INFO] 
+[26/45] Model=Llama3.2 3B | Scenario=high_load | Run=2
+2026-06-30 07:34:45 [INFO]   [HIGH_LOAD] Llama3.2 3B — run 2/3 (50 prompts)
+2026-06-30 07:34:45 [INFO]   [Warmup] Llama3.2 3B — 3 rounds
+2026-06-30 07:34:46 [INFO]   [Cold start] Llama3.2 3B: 929 ms
+2026-06-30 07:37:23 [INFO]   Saved 50 rows to CSV
+2026-06-30 07:37:23 [INFO]   Cooling down 15s ...
+2026-06-30 07:37:38 [INFO] 
+[27/45] Model=Llama3.2 3B | Scenario=concurrent | Run=2
+2026-06-30 07:37:38 [INFO]   [CONCURRENT] Llama3.2 3B — run 2/3 (50 prompts, 4 parallel)
+2026-06-30 07:37:38 [INFO]   [Warmup] Llama3.2 3B — 3 rounds
+2026-06-30 07:37:39 [INFO]   [Cold start] Llama3.2 3B: 855 ms
+2026-06-30 07:39:59 [INFO]   Saved 50 rows to CSV
+2026-06-30 07:39:59 [INFO]   Cooling down 15s ...
+2026-06-30 07:40:14 [INFO] 
+[28/45] Model=Phi-3 3.8B | Scenario=serial | Run=2
+2026-06-30 07:40:14 [INFO]   [SERIAL] Phi-3 3.8B — run 2/3 (50 prompts)
+2026-06-30 07:40:14 [INFO]   [Warmup] Phi-3 3.8B — 3 rounds
+2026-06-30 07:40:17 [INFO]   [Cold start] Phi-3 3.8B: 3118 ms
+2026-06-30 07:43:09 [INFO]   Saved 50 rows to CSV
+2026-06-30 07:43:09 [INFO]   Cooling down 15s ...
+2026-06-30 07:43:24 [INFO] 
+[29/45] Model=Phi-3 3.8B | Scenario=high_load | Run=2
+2026-06-30 07:43:24 [INFO]   [HIGH_LOAD] Phi-3 3.8B — run 2/3 (50 prompts)
+2026-06-30 07:43:24 [INFO]   [Warmup] Phi-3 3.8B — 3 rounds
+2026-06-30 07:43:25 [INFO]   [Cold start] Phi-3 3.8B: 510 ms
+2026-06-30 07:46:12 [INFO]   Saved 50 rows to CSV
+2026-06-30 07:46:12 [INFO]   Cooling down 15s ...
+2026-06-30 07:46:27 [INFO] 
+[30/45] Model=Phi-3 3.8B | Scenario=concurrent | Run=2
+2026-06-30 07:46:27 [INFO]   [CONCURRENT] Phi-3 3.8B — run 2/3 (50 prompts, 4 parallel)
+2026-06-30 07:46:27 [INFO]   [Warmup] Phi-3 3.8B — 3 rounds
+2026-06-30 07:46:27 [INFO]   [Cold start] Phi-3 3.8B: 495 ms
+2026-06-30 07:49:13 [INFO]   Saved 50 rows to CSV
+2026-06-30 07:49:13 [INFO]   Cooling down 15s ...
+2026-06-30 07:49:28 [INFO] 
+[31/45] Model=Qwen2.5 0.5B | Scenario=serial | Run=3
+2026-06-30 07:49:28 [INFO]   [SERIAL] Qwen2.5 0.5B — run 3/3 (50 prompts)
+2026-06-30 07:49:28 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-30 07:49:31 [INFO]   [Cold start] Qwen2.5 0.5B: 3226 ms
+2026-06-30 07:50:46 [INFO]   Saved 50 rows to CSV
+2026-06-30 07:50:46 [INFO]   Cooling down 15s ...
+2026-06-30 07:51:01 [INFO] 
+[32/45] Model=Qwen2.5 0.5B | Scenario=high_load | Run=3
+2026-06-30 07:51:01 [INFO]   [HIGH_LOAD] Qwen2.5 0.5B — run 3/3 (50 prompts)
+2026-06-30 07:51:01 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-30 07:51:02 [INFO]   [Cold start] Qwen2.5 0.5B: 711 ms
+2026-06-30 07:52:12 [INFO]   Saved 50 rows to CSV
+2026-06-30 07:52:12 [INFO]   Cooling down 15s ...
+2026-06-30 07:52:27 [INFO] 
+[33/45] Model=Qwen2.5 0.5B | Scenario=concurrent | Run=3
+2026-06-30 07:52:27 [INFO]   [CONCURRENT] Qwen2.5 0.5B — run 3/3 (50 prompts, 4 parallel)
+2026-06-30 07:52:27 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-30 07:52:27 [INFO]   [Cold start] Qwen2.5 0.5B: 678 ms
+2026-06-30 07:53:22 [INFO]   Saved 50 rows to CSV
+2026-06-30 07:53:22 [INFO]   Cooling down 15s ...
+2026-06-30 07:53:37 [INFO] 
+[34/45] Model=TinyLlama 1.1B | Scenario=serial | Run=3
+2026-06-30 07:53:37 [INFO]   [SERIAL] TinyLlama 1.1B — run 3/3 (50 prompts)
+2026-06-30 07:53:37 [INFO]   [Warmup] TinyLlama 1.1B — 3 rounds
+2026-06-30 07:53:41 [INFO]   [Cold start] TinyLlama 1.1B: 4100 ms
+2026-06-30 07:54:45 [INFO]   Saved 50 rows to CSV
+2026-06-30 07:54:45 [INFO]   Cooling down 15s ...
+2026-06-30 07:55:00 [INFO] 
+[35/45] Model=TinyLlama 1.1B | Scenario=high_load | Run=3
+2026-06-30 07:55:00 [INFO]   [HIGH_LOAD] TinyLlama 1.1B — run 3/3 (50 prompts)
+2026-06-30 07:55:00 [INFO]   [Warmup] TinyLlama 1.1B — 3 rounds
+2026-06-30 07:55:02 [INFO]   [Cold start] TinyLlama 1.1B: 1678 ms
+2026-06-30 07:56:00 [INFO]   Saved 50 rows to CSV
+2026-06-30 07:56:00 [INFO]   Cooling down 15s ...
+2026-06-30 07:56:15 [INFO] 
+[36/45] Model=TinyLlama 1.1B | Scenario=concurrent | Run=3
+2026-06-30 07:56:15 [INFO]   [CONCURRENT] TinyLlama 1.1B — run 3/3 (50 prompts, 4 parallel)
+2026-06-30 07:56:15 [INFO]   [Warmup] TinyLlama 1.1B — 3 rounds
+2026-06-30 07:56:17 [INFO]   [Cold start] TinyLlama 1.1B: 1541 ms
+2026-06-30 07:57:11 [INFO]   Saved 50 rows to CSV
+2026-06-30 07:57:11 [INFO]   Cooling down 15s ...
+2026-06-30 07:57:26 [INFO] 
+[37/45] Model=Qwen2 1.5B | Scenario=serial | Run=3
+2026-06-30 07:57:26 [INFO]   [SERIAL] Qwen2 1.5B — run 3/3 (50 prompts)
+2026-06-30 07:57:26 [INFO]   [Warmup] Qwen2 1.5B — 3 rounds
+2026-06-30 07:57:30 [INFO]   [Cold start] Qwen2 1.5B: 3538 ms
+2026-06-30 07:59:06 [INFO]   Saved 50 rows to CSV
+2026-06-30 07:59:06 [INFO]   Cooling down 15s ...
+2026-06-30 07:59:21 [INFO] 
+[38/45] Model=Qwen2 1.5B | Scenario=high_load | Run=3
+2026-06-30 07:59:21 [INFO]   [HIGH_LOAD] Qwen2 1.5B — run 3/3 (50 prompts)
+2026-06-30 07:59:21 [INFO]   [Warmup] Qwen2 1.5B — 3 rounds
+2026-06-30 07:59:22 [INFO]   [Cold start] Qwen2 1.5B: 780 ms
+2026-06-30 08:00:52 [INFO]   Saved 50 rows to CSV
+2026-06-30 08:00:52 [INFO]   Cooling down 15s ...
+2026-06-30 08:01:07 [INFO] 
+[39/45] Model=Qwen2 1.5B | Scenario=concurrent | Run=3
+2026-06-30 08:01:07 [INFO]   [CONCURRENT] Qwen2 1.5B — run 3/3 (50 prompts, 4 parallel)
+2026-06-30 08:01:07 [INFO]   [Warmup] Qwen2 1.5B — 3 rounds
+2026-06-30 08:01:08 [INFO]   [Cold start] Qwen2 1.5B: 691 ms
+2026-06-30 08:02:24 [INFO]   Saved 50 rows to CSV
+2026-06-30 08:02:24 [INFO]   Cooling down 15s ...
+2026-06-30 08:02:39 [INFO] 
+[40/45] Model=Llama3.2 3B | Scenario=serial | Run=3
+2026-06-30 08:02:39 [INFO]   [SERIAL] Llama3.2 3B — run 3/3 (50 prompts)
+2026-06-30 08:02:39 [INFO]   [Warmup] Llama3.2 3B — 3 rounds
+2026-06-30 08:02:43 [INFO]   [Cold start] Llama3.2 3B: 3686 ms
+2026-06-30 08:05:26 [INFO]   Saved 50 rows to CSV
+2026-06-30 08:05:26 [INFO]   Cooling down 15s ...
+2026-06-30 08:05:41 [INFO] 
+[41/45] Model=Llama3.2 3B | Scenario=high_load | Run=3
+2026-06-30 08:05:41 [INFO]   [HIGH_LOAD] Llama3.2 3B — run 3/3 (50 prompts)
+2026-06-30 08:05:41 [INFO]   [Warmup] Llama3.2 3B — 3 rounds
+2026-06-30 08:05:42 [INFO]   [Cold start] Llama3.2 3B: 1038 ms
+2026-06-30 08:08:21 [INFO]   Saved 50 rows to CSV
+2026-06-30 08:08:21 [INFO]   Cooling down 15s ...
+2026-06-30 08:08:36 [INFO] 
+[42/45] Model=Llama3.2 3B | Scenario=concurrent | Run=3
+2026-06-30 08:08:36 [INFO]   [CONCURRENT] Llama3.2 3B — run 3/3 (50 prompts, 4 parallel)
+2026-06-30 08:08:36 [INFO]   [Warmup] Llama3.2 3B — 3 rounds
+2026-06-30 08:08:36 [INFO]   [Cold start] Llama3.2 3B: 933 ms
+2026-06-30 08:10:57 [INFO]   Saved 50 rows to CSV
+2026-06-30 08:10:57 [INFO]   Cooling down 15s ...
+2026-06-30 08:11:12 [INFO] 
+[43/45] Model=Phi-3 3.8B | Scenario=serial | Run=3
+2026-06-30 08:11:12 [INFO]   [SERIAL] Phi-3 3.8B — run 3/3 (50 prompts)
+2026-06-30 08:11:12 [INFO]   [Warmup] Phi-3 3.8B — 3 rounds
+2026-06-30 08:11:15 [INFO]   [Cold start] Phi-3 3.8B: 3062 ms
+2026-06-30 08:14:06 [INFO]   Saved 50 rows to CSV
+2026-06-30 08:14:06 [INFO]   Cooling down 15s ...
+2026-06-30 08:14:21 [INFO] 
+[44/45] Model=Phi-3 3.8B | Scenario=high_load | Run=3
+2026-06-30 08:14:21 [INFO]   [HIGH_LOAD] Phi-3 3.8B — run 3/3 (50 prompts)
+2026-06-30 08:14:21 [INFO]   [Warmup] Phi-3 3.8B — 3 rounds
+2026-06-30 08:14:22 [INFO]   [Cold start] Phi-3 3.8B: 636 ms
+2026-06-30 08:17:09 [INFO]   Saved 50 rows to CSV
+2026-06-30 08:17:09 [INFO]   Cooling down 15s ...
+2026-06-30 08:17:24 [INFO] 
+[45/45] Model=Phi-3 3.8B | Scenario=concurrent | Run=3
+2026-06-30 08:17:24 [INFO]   [CONCURRENT] Phi-3 3.8B — run 3/3 (50 prompts, 4 parallel)
+2026-06-30 08:17:24 [INFO]   [Warmup] Phi-3 3.8B — 3 rounds
+2026-06-30 08:17:24 [INFO]   [Cold start] Phi-3 3.8B: 622 ms
+2026-06-30 08:20:09 [INFO]   Saved 50 rows to CSV
+2026-06-30 08:20:09 [INFO]   Cooling down 15s ...
+2026-06-30 08:20:24 [INFO] 
+=== Post-processing ===
+2026-06-30 08:20:24 [INFO] ============================================================
+2026-06-30 08:20:24 [INFO] DONE
+2026-06-30 08:20:24 [INFO]   Raw CSV  : ..\results\runtime_results.csv
+2026-06-30 08:20:24 [INFO]   Summary  : ..\results\summary.csv
+2026-06-30 08:20:24 [INFO]   Metadata : ..\results\metadata.json
+2026-06-30 08:20:24 [INFO]   Total requests: 2250 (0 outliers flagged)
+2026-06-30 08:20:24 [INFO] ============================================================
+2026-06-30 16:40:43 [INFO] ============================================================
+2026-06-30 16:40:43 [INFO] SLM Runtime Benchmarking — LDWS
+2026-06-30 16:40:43 [INFO] Models : ['Qwen2.5 0.5B', 'TinyLlama 1.1B', 'Qwen2 1.5B', 'Llama3.2 3B', 'Phi-3 3.8B']
+2026-06-30 16:40:43 [INFO] Runs   : 3
+2026-06-30 16:40:43 [INFO] Prompts: ..\data\prompts.json
+2026-06-30 16:40:43 [INFO] Output : ..\results
+2026-06-30 16:40:43 [INFO] CodeCarbon available: True
+2026-06-30 16:40:43 [INFO] ============================================================
+2026-06-30 16:40:43 [INFO] 
+=== Hardware Environment ===
+2026-06-30 16:40:43 [INFO]   [Hardware] OS: Windows-11-10.0.22631-SP0
+2026-06-30 16:40:43 [INFO]   [Hardware] CPU: Intel64 Family 6 Model 186 Stepping 2, GenuineIntel (14 physical / 20 logical cores)
+2026-06-30 16:40:43 [INFO]   [Hardware] RAM: 15.65 GB
+2026-06-30 16:40:43 [INFO]   [Hardware] GPU: NVIDIA GeForce RTX 4050 Laptop GPU
+2026-06-30 16:40:43 [INFO] Loaded 50 prompts from LDWS set
+2026-06-30 16:40:43 [INFO] 
+=== Phase 0: Inference Device Detection ===
+2026-06-30 16:40:48 [INFO]   [Device] qwen2.5:0.5b         → GPU  (ΔVRAM=845 MB, ΔUtil=10%, waited=0.5s)
+2026-06-30 16:40:50 [INFO]   [Unload] qwen2.5:0.5b         VRAM 1146→302MB (waited 2.0s)
+2026-06-30 16:40:52 [INFO]   [Device] tinyllama:latest     → GPU  (ΔVRAM=795 MB, ΔUtil=0%, waited=0.5s)
+2026-06-30 16:40:54 [INFO]   [Unload] tinyllama:latest     VRAM 1096→302MB (waited 2.0s)
+2026-06-30 16:40:57 [INFO]   [Device] qwen2:1.5b           → GPU  (ΔVRAM=1417 MB, ΔUtil=0%, waited=0.5s)
+2026-06-30 16:40:59 [INFO]   [Unload] qwen2:1.5b           VRAM 1718→302MB (waited 2.0s)
+2026-06-30 16:41:04 [INFO]   [Device] llama3.2:3b          → GPU  (ΔVRAM=2741 MB, ΔUtil=0%, waited=0.5s)
+2026-06-30 16:41:06 [INFO]   [Unload] llama3.2:3b          VRAM 3042→302MB (waited 2.0s)
+2026-06-30 16:41:09 [INFO]   [Device] phi3:latest          → GPU  (ΔVRAM=3745 MB, ΔUtil=0%, waited=0.5s)
+2026-06-30 16:41:11 [INFO]   [Unload] phi3:latest          VRAM 4046→302MB (waited 2.0s)
+2026-06-30 16:41:11 [INFO]   Device map saved to device_map.json
+2026-06-30 16:42:11 [INFO]   Idle baseline — CPU: 1.2%  GPU idle VRAM: 302MB
+2026-06-30 16:42:11 [INFO] 
+[1/45] Model=Qwen2.5 0.5B | Scenario=serial | Run=1
+2026-06-30 16:42:11 [INFO]   [SERIAL] Qwen2.5 0.5B — run 1/3 (50 prompts)
+2026-06-30 16:42:11 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-30 16:42:13 [INFO]   [Cold start] Qwen2.5 0.5B: 2597 ms
+2026-06-30 16:43:31 [INFO]   Saved 50 rows to CSV
+2026-06-30 16:43:31 [INFO]   Cooling down 15s ...
+2026-06-30 16:43:46 [INFO] 
+[2/45] Model=Qwen2.5 0.5B | Scenario=high_load | Run=1
+2026-06-30 16:43:46 [INFO]   [HIGH_LOAD] Qwen2.5 0.5B — run 1/3 (50 prompts)
+2026-06-30 16:43:46 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-30 16:43:47 [INFO]   [Cold start] Qwen2.5 0.5B: 714 ms
+2026-06-30 16:44:57 [INFO]   Saved 50 rows to CSV
+2026-06-30 16:44:57 [INFO]   Cooling down 15s ...
+2026-06-30 16:45:12 [INFO] 
+[3/45] Model=Qwen2.5 0.5B | Scenario=concurrent | Run=1
+2026-06-30 16:45:12 [INFO]   [CONCURRENT] Qwen2.5 0.5B — run 1/3 (50 prompts, 4 parallel)
+2026-06-30 16:45:12 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-30 16:45:12 [INFO]   [Cold start] Qwen2.5 0.5B: 817 ms
+2026-06-30 16:46:07 [INFO]   Saved 50 rows to CSV
+2026-06-30 16:46:07 [INFO]   Cooling down 15s ...
+2026-06-30 16:46:22 [INFO]   [Cleanup] Unloading model qwen2.5:0.5b before next switch...
+2026-06-30 16:46:24 [INFO]   [Unload] qwen2.5:0.5b         VRAM 1150→302MB (waited 2.0s)
+2026-06-30 16:46:24 [INFO] 
+[4/45] Model=TinyLlama 1.1B | Scenario=serial | Run=1
+2026-06-30 16:46:24 [INFO]   [SERIAL] TinyLlama 1.1B — run 1/3 (50 prompts)
+2026-06-30 16:46:24 [INFO]   [Warmup] TinyLlama 1.1B — 3 rounds
+2026-06-30 16:46:27 [INFO]   [Cold start] TinyLlama 1.1B: 2640 ms
+2026-06-30 16:47:31 [INFO]   Saved 50 rows to CSV
+2026-06-30 16:47:31 [INFO]   Cooling down 15s ...
+2026-06-30 16:47:46 [INFO] 
+[5/45] Model=TinyLlama 1.1B | Scenario=high_load | Run=1
+2026-06-30 16:47:46 [INFO]   [HIGH_LOAD] TinyLlama 1.1B — run 1/3 (50 prompts)
+2026-06-30 16:47:46 [INFO]   [Warmup] TinyLlama 1.1B — 3 rounds
+2026-06-30 16:47:48 [INFO]   [Cold start] TinyLlama 1.1B: 1600 ms
+2026-06-30 16:48:46 [INFO]   Saved 50 rows to CSV
+2026-06-30 16:48:46 [INFO]   Cooling down 15s ...
+2026-06-30 16:49:01 [INFO] 
+[6/45] Model=TinyLlama 1.1B | Scenario=concurrent | Run=1
+2026-06-30 16:49:01 [INFO]   [CONCURRENT] TinyLlama 1.1B — run 1/3 (50 prompts, 4 parallel)
+2026-06-30 16:49:01 [INFO]   [Warmup] TinyLlama 1.1B — 3 rounds
+2026-06-30 16:49:03 [INFO]   [Cold start] TinyLlama 1.1B: 1511 ms
+2026-06-30 16:49:57 [INFO]   Saved 50 rows to CSV
+2026-06-30 16:49:57 [INFO]   Cooling down 15s ...
+2026-06-30 16:50:12 [INFO]   [Cleanup] Unloading model tinyllama:latest before next switch...
+2026-06-30 16:50:14 [INFO]   [Unload] tinyllama:latest     VRAM 1098→302MB (waited 2.0s)
+2026-06-30 16:50:14 [INFO] 
+[7/45] Model=Qwen2 1.5B | Scenario=serial | Run=1
+2026-06-30 16:50:14 [INFO]   [SERIAL] Qwen2 1.5B — run 1/3 (50 prompts)
+2026-06-30 16:50:14 [INFO]   [Warmup] Qwen2 1.5B — 3 rounds
+2026-06-30 16:50:17 [INFO]   [Cold start] Qwen2 1.5B: 2908 ms
+2026-06-30 16:51:54 [INFO]   Saved 50 rows to CSV
+2026-06-30 16:51:54 [INFO]   Cooling down 15s ...
+2026-06-30 16:52:09 [INFO] 
+[8/45] Model=Qwen2 1.5B | Scenario=high_load | Run=1
+2026-06-30 16:52:09 [INFO]   [HIGH_LOAD] Qwen2 1.5B — run 1/3 (50 prompts)
+2026-06-30 16:52:09 [INFO]   [Warmup] Qwen2 1.5B — 3 rounds
+2026-06-30 16:52:10 [INFO]   [Cold start] Qwen2 1.5B: 809 ms
+2026-06-30 16:53:40 [INFO]   Saved 50 rows to CSV
+2026-06-30 16:53:40 [INFO]   Cooling down 15s ...
+2026-06-30 16:53:55 [INFO] 
+[9/45] Model=Qwen2 1.5B | Scenario=concurrent | Run=1
+2026-06-30 16:53:55 [INFO]   [CONCURRENT] Qwen2 1.5B — run 1/3 (50 prompts, 4 parallel)
+2026-06-30 16:53:55 [INFO]   [Warmup] Qwen2 1.5B — 3 rounds
+2026-06-30 16:53:56 [INFO]   [Cold start] Qwen2 1.5B: 734 ms
+2026-06-30 16:55:13 [INFO]   Saved 50 rows to CSV
+2026-06-30 16:55:13 [INFO]   Cooling down 15s ...
+2026-06-30 16:55:28 [INFO]   [Cleanup] Unloading model qwen2:1.5b before next switch...
+2026-06-30 16:55:30 [INFO]   [Unload] qwen2:1.5b           VRAM 1720→302MB (waited 2.0s)
+2026-06-30 16:55:30 [INFO] 
+[10/45] Model=Llama3.2 3B | Scenario=serial | Run=1
+2026-06-30 16:55:30 [INFO]   [SERIAL] Llama3.2 3B — run 1/3 (50 prompts)
+2026-06-30 16:55:30 [INFO]   [Warmup] Llama3.2 3B — 3 rounds
+2026-06-30 16:55:33 [INFO]   [Cold start] Llama3.2 3B: 3538 ms
+2026-06-30 16:58:17 [INFO]   Saved 50 rows to CSV
+2026-06-30 16:58:17 [INFO]   Cooling down 15s ...
+2026-06-30 16:58:32 [INFO] 
+[11/45] Model=Llama3.2 3B | Scenario=high_load | Run=1
+2026-06-30 16:58:32 [INFO]   [HIGH_LOAD] Llama3.2 3B — run 1/3 (50 prompts)
+2026-06-30 16:58:32 [INFO]   [Warmup] Llama3.2 3B — 3 rounds
+2026-06-30 16:58:33 [INFO]   [Cold start] Llama3.2 3B: 1013 ms
+2026-06-30 17:01:11 [INFO]   Saved 50 rows to CSV
+2026-06-30 17:01:11 [INFO]   Cooling down 15s ...
+2026-06-30 17:01:26 [INFO] 
+[12/45] Model=Llama3.2 3B | Scenario=concurrent | Run=1
+2026-06-30 17:01:26 [INFO]   [CONCURRENT] Llama3.2 3B — run 1/3 (50 prompts, 4 parallel)
+2026-06-30 17:01:26 [INFO]   [Warmup] Llama3.2 3B — 3 rounds
+2026-06-30 17:01:27 [INFO]   [Cold start] Llama3.2 3B: 975 ms
+2026-06-30 17:03:48 [INFO]   Saved 50 rows to CSV
+2026-06-30 17:03:48 [INFO]   Cooling down 15s ...
+2026-06-30 17:04:03 [INFO]   [Cleanup] Unloading model llama3.2:3b before next switch...
+2026-06-30 17:04:05 [INFO]   [Unload] llama3.2:3b          VRAM 3046→302MB (waited 2.0s)
+2026-06-30 17:04:05 [INFO] 
+[13/45] Model=Phi-3 3.8B | Scenario=serial | Run=1
+2026-06-30 17:04:05 [INFO]   [SERIAL] Phi-3 3.8B — run 1/3 (50 prompts)
+2026-06-30 17:04:05 [INFO]   [Warmup] Phi-3 3.8B — 3 rounds
+2026-06-30 17:04:07 [INFO]   [Cold start] Phi-3 3.8B: 2370 ms
+2026-06-30 17:06:59 [INFO]   Saved 50 rows to CSV
+2026-06-30 17:06:59 [INFO]   Cooling down 15s ...
+2026-06-30 17:07:14 [INFO] 
+[14/45] Model=Phi-3 3.8B | Scenario=high_load | Run=1
+2026-06-30 17:07:14 [INFO]   [HIGH_LOAD] Phi-3 3.8B — run 1/3 (50 prompts)
+2026-06-30 17:07:14 [INFO]   [Warmup] Phi-3 3.8B — 3 rounds
+2026-06-30 17:07:15 [INFO]   [Cold start] Phi-3 3.8B: 616 ms
+2026-06-30 17:10:02 [INFO]   Saved 50 rows to CSV
+2026-06-30 17:10:02 [INFO]   Cooling down 15s ...
+2026-06-30 17:10:17 [INFO] 
+[15/45] Model=Phi-3 3.8B | Scenario=concurrent | Run=1
+2026-06-30 17:10:17 [INFO]   [CONCURRENT] Phi-3 3.8B — run 1/3 (50 prompts, 4 parallel)
+2026-06-30 17:10:17 [INFO]   [Warmup] Phi-3 3.8B — 3 rounds
+2026-06-30 17:10:18 [INFO]   [Cold start] Phi-3 3.8B: 513 ms
+2026-06-30 17:13:03 [INFO]   Saved 50 rows to CSV
+2026-06-30 17:13:03 [INFO]   Cooling down 15s ...
+2026-06-30 17:13:18 [INFO]   [Cleanup] Unloading model phi3:latest before next switch...
+2026-06-30 17:13:20 [INFO]   [Unload] phi3:latest          VRAM 4048→302MB (waited 2.5s)
+2026-06-30 17:13:20 [INFO] 
+[16/45] Model=Qwen2.5 0.5B | Scenario=serial | Run=2
+2026-06-30 17:13:20 [INFO]   [SERIAL] Qwen2.5 0.5B — run 2/3 (50 prompts)
+2026-06-30 17:13:20 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-30 17:13:23 [INFO]   [Cold start] Qwen2.5 0.5B: 2491 ms
+2026-06-30 17:14:38 [INFO]   Saved 50 rows to CSV
+2026-06-30 17:14:38 [INFO]   Cooling down 15s ...
+2026-06-30 17:14:53 [INFO] 
+[17/45] Model=Qwen2.5 0.5B | Scenario=high_load | Run=2
+2026-06-30 17:14:53 [INFO]   [HIGH_LOAD] Qwen2.5 0.5B — run 2/3 (50 prompts)
+2026-06-30 17:14:53 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-30 17:14:54 [INFO]   [Cold start] Qwen2.5 0.5B: 738 ms
+2026-06-30 17:16:03 [INFO]   Saved 50 rows to CSV
+2026-06-30 17:16:03 [INFO]   Cooling down 15s ...
+2026-06-30 17:16:18 [INFO] 
+[18/45] Model=Qwen2.5 0.5B | Scenario=concurrent | Run=2
+2026-06-30 17:16:18 [INFO]   [CONCURRENT] Qwen2.5 0.5B — run 2/3 (50 prompts, 4 parallel)
+2026-06-30 17:16:18 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-30 17:16:19 [INFO]   [Cold start] Qwen2.5 0.5B: 796 ms
+2026-06-30 17:17:14 [INFO]   Saved 50 rows to CSV
+2026-06-30 17:17:14 [INFO]   Cooling down 15s ...
+2026-06-30 17:17:29 [INFO]   [Cleanup] Unloading model qwen2.5:0.5b before next switch...
+2026-06-30 17:17:31 [INFO]   [Unload] qwen2.5:0.5b         VRAM 1150→302MB (waited 2.0s)
+2026-06-30 17:17:31 [INFO] 
+[19/45] Model=TinyLlama 1.1B | Scenario=serial | Run=2
+2026-06-30 17:17:31 [INFO]   [SERIAL] TinyLlama 1.1B — run 2/3 (50 prompts)
+2026-06-30 17:17:31 [INFO]   [Warmup] TinyLlama 1.1B — 3 rounds
+2026-06-30 17:17:34 [INFO]   [Cold start] TinyLlama 1.1B: 2648 ms
+2026-06-30 17:18:38 [INFO]   Saved 50 rows to CSV
+2026-06-30 17:18:38 [INFO]   Cooling down 15s ...
+2026-06-30 17:18:53 [INFO] 
+[20/45] Model=TinyLlama 1.1B | Scenario=high_load | Run=2
+2026-06-30 17:18:53 [INFO]   [HIGH_LOAD] TinyLlama 1.1B — run 2/3 (50 prompts)
+2026-06-30 17:18:53 [INFO]   [Warmup] TinyLlama 1.1B — 3 rounds
+2026-06-30 17:18:54 [INFO]   [Cold start] TinyLlama 1.1B: 1651 ms
+2026-06-30 17:19:53 [INFO]   Saved 50 rows to CSV
+2026-06-30 17:19:53 [INFO]   Cooling down 15s ...
+2026-06-30 17:20:08 [INFO] 
+[21/45] Model=TinyLlama 1.1B | Scenario=concurrent | Run=2
+2026-06-30 17:20:08 [INFO]   [CONCURRENT] TinyLlama 1.1B — run 2/3 (50 prompts, 4 parallel)
+2026-06-30 17:20:08 [INFO]   [Warmup] TinyLlama 1.1B — 3 rounds
+2026-06-30 17:20:10 [INFO]   [Cold start] TinyLlama 1.1B: 1626 ms
+2026-06-30 17:21:05 [INFO]   Saved 50 rows to CSV
+2026-06-30 17:21:05 [INFO]   Cooling down 15s ...
+2026-06-30 17:21:20 [INFO]   [Cleanup] Unloading model tinyllama:latest before next switch...
+2026-06-30 17:21:22 [INFO]   [Unload] tinyllama:latest     VRAM 1098→302MB (waited 2.0s)
+2026-06-30 17:21:22 [INFO] 
+[22/45] Model=Qwen2 1.5B | Scenario=serial | Run=2
+2026-06-30 17:21:22 [INFO]   [SERIAL] Qwen2 1.5B — run 2/3 (50 prompts)
+2026-06-30 17:21:22 [INFO]   [Warmup] Qwen2 1.5B — 3 rounds
+2026-06-30 17:21:25 [INFO]   [Cold start] Qwen2 1.5B: 3072 ms
+2026-06-30 17:23:02 [INFO]   Saved 50 rows to CSV
+2026-06-30 17:23:02 [INFO]   Cooling down 15s ...
+2026-06-30 17:23:17 [INFO] 
+[23/45] Model=Qwen2 1.5B | Scenario=high_load | Run=2
+2026-06-30 17:23:17 [INFO]   [HIGH_LOAD] Qwen2 1.5B — run 2/3 (50 prompts)
+2026-06-30 17:23:17 [INFO]   [Warmup] Qwen2 1.5B — 3 rounds
+2026-06-30 17:23:17 [INFO]   [Cold start] Qwen2 1.5B: 713 ms
+2026-06-30 17:24:48 [INFO]   Saved 50 rows to CSV
+2026-06-30 17:24:48 [INFO]   Cooling down 15s ...
+2026-06-30 17:25:03 [INFO] 
+[24/45] Model=Qwen2 1.5B | Scenario=concurrent | Run=2
+2026-06-30 17:25:03 [INFO]   [CONCURRENT] Qwen2 1.5B — run 2/3 (50 prompts, 4 parallel)
+2026-06-30 17:25:03 [INFO]   [Warmup] Qwen2 1.5B — 3 rounds
+2026-06-30 17:25:04 [INFO]   [Cold start] Qwen2 1.5B: 747 ms
+2026-06-30 17:26:21 [INFO]   Saved 50 rows to CSV
+2026-06-30 17:26:21 [INFO]   Cooling down 15s ...
+2026-06-30 17:26:36 [INFO]   [Cleanup] Unloading model qwen2:1.5b before next switch...
+2026-06-30 17:26:38 [INFO]   [Unload] qwen2:1.5b           VRAM 1720→302MB (waited 2.0s)
+2026-06-30 17:26:38 [INFO] 
+[25/45] Model=Llama3.2 3B | Scenario=serial | Run=2
+2026-06-30 17:26:38 [INFO]   [SERIAL] Llama3.2 3B — run 2/3 (50 prompts)
+2026-06-30 17:26:38 [INFO]   [Warmup] Llama3.2 3B — 3 rounds
+2026-06-30 17:26:41 [INFO]   [Cold start] Llama3.2 3B: 3584 ms
+2026-06-30 17:29:25 [INFO]   Saved 50 rows to CSV
+2026-06-30 17:29:25 [INFO]   Cooling down 15s ...
+2026-06-30 17:29:40 [INFO] 
+[26/45] Model=Llama3.2 3B | Scenario=high_load | Run=2
+2026-06-30 17:29:40 [INFO]   [HIGH_LOAD] Llama3.2 3B — run 2/3 (50 prompts)
+2026-06-30 17:29:40 [INFO]   [Warmup] Llama3.2 3B — 3 rounds
+2026-06-30 17:29:41 [INFO]   [Cold start] Llama3.2 3B: 900 ms
+2026-06-30 17:32:19 [INFO]   Saved 50 rows to CSV
+2026-06-30 17:32:19 [INFO]   Cooling down 15s ...
+2026-06-30 17:32:34 [INFO] 
+[27/45] Model=Llama3.2 3B | Scenario=concurrent | Run=2
+2026-06-30 17:32:34 [INFO]   [CONCURRENT] Llama3.2 3B — run 2/3 (50 prompts, 4 parallel)
+2026-06-30 17:32:34 [INFO]   [Warmup] Llama3.2 3B — 3 rounds
+2026-06-30 17:32:35 [INFO]   [Cold start] Llama3.2 3B: 1009 ms
+2026-06-30 17:34:56 [INFO]   Saved 50 rows to CSV
+2026-06-30 17:34:56 [INFO]   Cooling down 15s ...
+2026-06-30 17:35:11 [INFO]   [Cleanup] Unloading model llama3.2:3b before next switch...
+2026-06-30 17:35:13 [INFO]   [Unload] llama3.2:3b          VRAM 3046→302MB (waited 2.0s)
+2026-06-30 17:35:13 [INFO] 
+[28/45] Model=Phi-3 3.8B | Scenario=serial | Run=2
+2026-06-30 17:35:13 [INFO]   [SERIAL] Phi-3 3.8B — run 2/3 (50 prompts)
+2026-06-30 17:35:13 [INFO]   [Warmup] Phi-3 3.8B — 3 rounds
+2026-06-30 17:35:16 [INFO]   [Cold start] Phi-3 3.8B: 2342 ms
+2026-06-30 17:38:08 [INFO]   Saved 50 rows to CSV
+2026-06-30 17:38:08 [INFO]   Cooling down 15s ...
+2026-06-30 17:38:23 [INFO] 
+[29/45] Model=Phi-3 3.8B | Scenario=high_load | Run=2
+2026-06-30 17:38:23 [INFO]   [HIGH_LOAD] Phi-3 3.8B — run 2/3 (50 prompts)
+2026-06-30 17:38:23 [INFO]   [Warmup] Phi-3 3.8B — 3 rounds
+2026-06-30 17:38:24 [INFO]   [Cold start] Phi-3 3.8B: 584 ms
+2026-06-30 17:41:11 [INFO]   Saved 50 rows to CSV
+2026-06-30 17:41:12 [INFO]   Cooling down 15s ...
+2026-06-30 17:41:27 [INFO] 
+[30/45] Model=Phi-3 3.8B | Scenario=concurrent | Run=2
+2026-06-30 17:41:27 [INFO]   [CONCURRENT] Phi-3 3.8B — run 2/3 (50 prompts, 4 parallel)
+2026-06-30 17:41:27 [INFO]   [Warmup] Phi-3 3.8B — 3 rounds
+2026-06-30 17:41:27 [INFO]   [Cold start] Phi-3 3.8B: 594 ms
+2026-06-30 17:44:13 [INFO]   Saved 50 rows to CSV
+2026-06-30 17:44:13 [INFO]   Cooling down 15s ...
+2026-06-30 17:44:28 [INFO]   [Cleanup] Unloading model phi3:latest before next switch...
+2026-06-30 17:44:30 [INFO]   [Unload] phi3:latest          VRAM 4048→302MB (waited 2.0s)
+2026-06-30 17:44:30 [INFO] 
+[31/45] Model=Qwen2.5 0.5B | Scenario=serial | Run=3
+2026-06-30 17:44:30 [INFO]   [SERIAL] Qwen2.5 0.5B — run 3/3 (50 prompts)
+2026-06-30 17:44:30 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-30 17:44:33 [INFO]   [Cold start] Qwen2.5 0.5B: 2800 ms
+2026-06-30 17:45:48 [INFO]   Saved 50 rows to CSV
+2026-06-30 17:45:48 [INFO]   Cooling down 15s ...
+2026-06-30 17:46:03 [INFO] 
+[32/45] Model=Qwen2.5 0.5B | Scenario=high_load | Run=3
+2026-06-30 17:46:03 [INFO]   [HIGH_LOAD] Qwen2.5 0.5B — run 3/3 (50 prompts)
+2026-06-30 17:46:03 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-30 17:46:04 [INFO]   [Cold start] Qwen2.5 0.5B: 722 ms
+2026-06-30 17:47:13 [INFO]   Saved 50 rows to CSV
+2026-06-30 17:47:13 [INFO]   Cooling down 15s ...
+2026-06-30 17:47:28 [INFO] 
+[33/45] Model=Qwen2.5 0.5B | Scenario=concurrent | Run=3
+2026-06-30 17:47:28 [INFO]   [CONCURRENT] Qwen2.5 0.5B — run 3/3 (50 prompts, 4 parallel)
+2026-06-30 17:47:28 [INFO]   [Warmup] Qwen2.5 0.5B — 3 rounds
+2026-06-30 17:47:29 [INFO]   [Cold start] Qwen2.5 0.5B: 657 ms
+2026-06-30 17:48:24 [INFO]   Saved 50 rows to CSV
+2026-06-30 17:48:24 [INFO]   Cooling down 15s ...
+2026-06-30 17:48:39 [INFO]   [Cleanup] Unloading model qwen2.5:0.5b before next switch...
+2026-06-30 17:48:41 [INFO]   [Unload] qwen2.5:0.5b         VRAM 1150→302MB (waited 2.0s)
+2026-06-30 17:48:41 [INFO] 
+[34/45] Model=TinyLlama 1.1B | Scenario=serial | Run=3
+2026-06-30 17:48:41 [INFO]   [SERIAL] TinyLlama 1.1B — run 3/3 (50 prompts)
+2026-06-30 17:48:41 [INFO]   [Warmup] TinyLlama 1.1B — 3 rounds
+2026-06-30 17:48:44 [INFO]   [Cold start] TinyLlama 1.1B: 2661 ms
+2026-06-30 17:49:48 [INFO]   Saved 50 rows to CSV
+2026-06-30 17:49:48 [INFO]   Cooling down 15s ...
+2026-06-30 17:50:03 [INFO] 
+[35/45] Model=TinyLlama 1.1B | Scenario=high_load | Run=3
+2026-06-30 17:50:03 [INFO]   [HIGH_LOAD] TinyLlama 1.1B — run 3/3 (50 prompts)
+2026-06-30 17:50:03 [INFO]   [Warmup] TinyLlama 1.1B — 3 rounds
+2026-06-30 17:50:05 [INFO]   [Cold start] TinyLlama 1.1B: 1568 ms
+2026-06-30 17:51:04 [INFO]   Saved 50 rows to CSV
+2026-06-30 17:51:04 [INFO]   Cooling down 15s ...
+2026-06-30 17:51:19 [INFO] 
+[36/45] Model=TinyLlama 1.1B | Scenario=concurrent | Run=3
+2026-06-30 17:51:19 [INFO]   [CONCURRENT] TinyLlama 1.1B — run 3/3 (50 prompts, 4 parallel)
+2026-06-30 17:51:19 [INFO]   [Warmup] TinyLlama 1.1B — 3 rounds
+2026-06-30 17:51:20 [INFO]   [Cold start] TinyLlama 1.1B: 1544 ms
+2026-06-30 17:52:15 [INFO]   Saved 50 rows to CSV
+2026-06-30 17:52:15 [INFO]   Cooling down 15s ...
+2026-06-30 17:52:30 [INFO]   [Cleanup] Unloading model tinyllama:latest before next switch...
+2026-06-30 17:52:32 [INFO]   [Unload] tinyllama:latest     VRAM 1098→302MB (waited 2.0s)
+2026-06-30 17:52:32 [INFO] 
+[37/45] Model=Qwen2 1.5B | Scenario=serial | Run=3
+2026-06-30 17:52:32 [INFO]   [SERIAL] Qwen2 1.5B — run 3/3 (50 prompts)
+2026-06-30 17:52:32 [INFO]   [Warmup] Qwen2 1.5B — 3 rounds
+2026-06-30 17:52:35 [INFO]   [Cold start] Qwen2 1.5B: 2823 ms
+2026-06-30 17:54:11 [INFO]   Saved 50 rows to CSV
+2026-06-30 17:54:11 [INFO]   Cooling down 15s ...
+2026-06-30 17:54:26 [INFO] 
+[38/45] Model=Qwen2 1.5B | Scenario=high_load | Run=3
+2026-06-30 17:54:26 [INFO]   [HIGH_LOAD] Qwen2 1.5B — run 3/3 (50 prompts)
+2026-06-30 17:54:26 [INFO]   [Warmup] Qwen2 1.5B — 3 rounds
+2026-06-30 17:54:27 [INFO]   [Cold start] Qwen2 1.5B: 741 ms
+2026-06-30 17:55:58 [INFO]   Saved 50 rows to CSV
+2026-06-30 17:55:58 [INFO]   Cooling down 15s ...
+2026-06-30 17:56:13 [INFO] 
+[39/45] Model=Qwen2 1.5B | Scenario=concurrent | Run=3
+2026-06-30 17:56:13 [INFO]   [CONCURRENT] Qwen2 1.5B — run 3/3 (50 prompts, 4 parallel)
+2026-06-30 17:56:13 [INFO]   [Warmup] Qwen2 1.5B — 3 rounds
+2026-06-30 17:56:14 [INFO]   [Cold start] Qwen2 1.5B: 749 ms
+2026-06-30 17:57:30 [INFO]   Saved 50 rows to CSV
+2026-06-30 17:57:30 [INFO]   Cooling down 15s ...
+2026-06-30 17:57:45 [INFO]   [Cleanup] Unloading model qwen2:1.5b before next switch...
+2026-06-30 17:57:47 [INFO]   [Unload] qwen2:1.5b           VRAM 1720→302MB (waited 2.0s)
+2026-06-30 17:57:47 [INFO] 
+[40/45] Model=Llama3.2 3B | Scenario=serial | Run=3
+2026-06-30 17:57:47 [INFO]   [SERIAL] Llama3.2 3B — run 3/3 (50 prompts)
+2026-06-30 17:57:47 [INFO]   [Warmup] Llama3.2 3B — 3 rounds
+2026-06-30 17:57:51 [INFO]   [Cold start] Llama3.2 3B: 3996 ms
+2026-06-30 18:00:35 [INFO]   Saved 50 rows to CSV
+2026-06-30 18:00:35 [INFO]   Cooling down 15s ...
+2026-06-30 18:00:50 [INFO] 
+[41/45] Model=Llama3.2 3B | Scenario=high_load | Run=3
+2026-06-30 18:00:50 [INFO]   [HIGH_LOAD] Llama3.2 3B — run 3/3 (50 prompts)
+2026-06-30 18:00:50 [INFO]   [Warmup] Llama3.2 3B — 3 rounds
+2026-06-30 18:00:51 [INFO]   [Cold start] Llama3.2 3B: 995 ms
+2026-06-30 18:03:31 [INFO]   Saved 50 rows to CSV
+2026-06-30 18:03:31 [INFO]   Cooling down 15s ...
+2026-06-30 18:03:46 [INFO] 
+[42/45] Model=Llama3.2 3B | Scenario=concurrent | Run=3
+2026-06-30 18:03:46 [INFO]   [CONCURRENT] Llama3.2 3B — run 3/3 (50 prompts, 4 parallel)
+2026-06-30 18:03:46 [INFO]   [Warmup] Llama3.2 3B — 3 rounds
+2026-06-30 18:03:46 [INFO]   [Cold start] Llama3.2 3B: 895 ms
+2026-06-30 18:06:07 [INFO]   Saved 50 rows to CSV
+2026-06-30 18:06:07 [INFO]   Cooling down 15s ...
+2026-06-30 18:06:22 [INFO]   [Cleanup] Unloading model llama3.2:3b before next switch...
+2026-06-30 18:06:24 [INFO]   [Unload] llama3.2:3b          VRAM 3046→302MB (waited 2.0s)
+2026-06-30 18:06:24 [INFO] 
+[43/45] Model=Phi-3 3.8B | Scenario=serial | Run=3
+2026-06-30 18:06:24 [INFO]   [SERIAL] Phi-3 3.8B — run 3/3 (50 prompts)
+2026-06-30 18:06:24 [INFO]   [Warmup] Phi-3 3.8B — 3 rounds
+2026-06-30 18:06:27 [INFO]   [Cold start] Phi-3 3.8B: 2366 ms
+2026-06-30 18:09:20 [INFO]   Saved 50 rows to CSV
+2026-06-30 18:09:20 [INFO]   Cooling down 15s ...
+2026-06-30 18:09:35 [INFO] 
+[44/45] Model=Phi-3 3.8B | Scenario=high_load | Run=3
+2026-06-30 18:09:35 [INFO]   [HIGH_LOAD] Phi-3 3.8B — run 3/3 (50 prompts)
+2026-06-30 18:09:35 [INFO]   [Warmup] Phi-3 3.8B — 3 rounds
+2026-06-30 18:09:36 [INFO]   [Cold start] Phi-3 3.8B: 649 ms
+2026-06-30 18:12:23 [INFO]   Saved 50 rows to CSV
+2026-06-30 18:12:23 [INFO]   Cooling down 15s ...
+2026-06-30 18:12:38 [INFO] 
+[45/45] Model=Phi-3 3.8B | Scenario=concurrent | Run=3
+2026-06-30 18:12:38 [INFO]   [CONCURRENT] Phi-3 3.8B — run 3/3 (50 prompts, 4 parallel)
+2026-06-30 18:12:38 [INFO]   [Warmup] Phi-3 3.8B — 3 rounds
+2026-06-30 18:12:39 [INFO]   [Cold start] Phi-3 3.8B: 436 ms
+2026-06-30 18:15:25 [INFO]   Saved 50 rows to CSV
+2026-06-30 18:15:25 [INFO]   Cooling down 15s ...
+2026-06-30 18:15:40 [INFO]   [Cleanup] Unloading model phi3:latest before next switch...
+2026-06-30 18:15:42 [INFO]   [Unload] phi3:latest          VRAM 4048→302MB (waited 2.0s)
+2026-06-30 18:15:42 [INFO] 
+=== Post-processing ===
+2026-06-30 18:15:43 [INFO] ============================================================
+2026-06-30 18:15:43 [INFO] DONE
+2026-06-30 18:15:43 [INFO]   Raw CSV  : ..\results\runtime_results.csv
+2026-06-30 18:15:43 [INFO]   Summary  : ..\results\summary.csv
+2026-06-30 18:15:43 [INFO]   Metadata : ..\results\metadata.json
+2026-06-30 18:15:43 [INFO]   Total requests: 2250 (0 outliers flagged)
+2026-06-30 18:15:43 [INFO] ============================================================
+2026-06-30 18:29:39 [INFO] ============================================================
+2026-06-30 18:29:39 [INFO] SLM Runtime Benchmarking — LDWS
+2026-06-30 18:29:39 [INFO] Models : ['Qwen2.5 0.5B', 'TinyLlama 1.1B', 'Qwen2 1.5B', 'Llama3.2 3B', 'Phi-3 3.8B']
+2026-06-30 18:29:39 [INFO] Runs   : 3
+2026-06-30 18:29:39 [INFO] Prompts: ..\data\prompts.json
+2026-06-30 18:29:39 [INFO] Output : ..\results
+2026-06-30 18:29:39 [INFO] CodeCarbon available: True
+2026-06-30 18:29:39 [INFO] ============================================================
+2026-06-30 18:29:39 [INFO] 
+=== Hardware Environment ===
+2026-06-30 18:29:39 [INFO]   [Hardware] OS: Windows-11-10.0.22631-SP0
+2026-06-30 18:29:39 [INFO]   [Hardware] CPU: Intel64 Family 6 Model 186 Stepping 2, GenuineIntel (14 physical / 20 logical cores)
+2026-06-30 18:29:39 [INFO]   [Hardware] RAM: 15.65 GB
+2026-06-30 18:29:39 [INFO]   [Hardware] GPU: NVIDIA GeForce RTX 4050 Laptop GPU
+2026-06-30 18:29:39 [INFO] Loaded 50 prompts from LDWS set
+2026-06-30 18:29:39 [INFO] --charts-only: loading existing CSV and regenerating summary
+2026-06-30 18:30:17 [INFO] ============================================================
+2026-06-30 18:30:17 [INFO] SLM Runtime Benchmarking — LDWS
+2026-06-30 18:30:17 [INFO] Models : ['Qwen2.5 0.5B', 'TinyLlama 1.1B', 'Qwen2 1.5B', 'Llama3.2 3B', 'Phi-3 3.8B']
+2026-06-30 18:30:17 [INFO] Runs   : 3
+2026-06-30 18:30:17 [INFO] Prompts: ..\data\prompts.json
+2026-06-30 18:30:17 [INFO] Output : ..\results
+2026-06-30 18:30:17 [INFO] CodeCarbon available: True
+2026-06-30 18:30:17 [INFO] ============================================================
+2026-06-30 18:30:17 [INFO] 
+=== Hardware Environment ===
+2026-06-30 18:30:17 [INFO]   [Hardware] OS: Windows-11-10.0.22631-SP0
+2026-06-30 18:30:17 [INFO]   [Hardware] CPU: Intel64 Family 6 Model 186 Stepping 2, GenuineIntel (14 physical / 20 logical cores)
+2026-06-30 18:30:17 [INFO]   [Hardware] RAM: 15.65 GB
+2026-06-30 18:30:17 [INFO]   [Hardware] GPU: NVIDIA GeForce RTX 4050 Laptop GPU
+2026-06-30 18:30:17 [INFO] Loaded 50 prompts from LDWS set
+2026-06-30 18:30:17 [INFO] --charts-only: loading existing CSV and regenerating summary
+2026-06-30 18:30:17 [INFO] Summary saved.

@@ -1,0 +1,7 @@
+{
+  "qwen2.5:0.5b": "GPU",
+  "tinyllama:latest": "GPU",
+  "qwen2:1.5b": "GPU",
+  "llama3.2:3b": "GPU",
+  "phi3:latest": "GPU"
+}

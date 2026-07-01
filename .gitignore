@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+*.log
+.ipynb_checkpoints/
+node_modules/
+package-lock.json
+package.json
+data/
+lmeval-new/
+*.pptx
+*.docx
+*.mp4
